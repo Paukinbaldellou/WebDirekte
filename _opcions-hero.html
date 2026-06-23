@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="assets/logo/k-seal.png">
+	<title>Exploració de heros — Direkte (intern)</title>
+	<meta name="robots" content="noindex">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles.css">
+
+	<style>
+		/* Pàgina interna d'exploració — no forma part de la web pública */
+		.xp-note {
+			position: sticky;
+			top: 0;
+			z-index: 50;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+			padding: 0.9rem var(--container-padding);
+			background-color: var(--color-accent);
+			color: var(--color-bg);
+			font-size: var(--fs-xs);
+			text-transform: uppercase;
+			letter-spacing: var(--ls-wider);
+		}
+
+		.xp-note a { color: var(--color-bg); text-decoration: underline; }
+
+		.xp-label {
+			position: absolute;
+			top: 1.5rem;
+			left: var(--container-padding);
+			z-index: 5;
+			display: inline-flex;
+			align-items: baseline;
+			gap: 0.75rem;
+			font-size: var(--fs-xs);
+			text-transform: uppercase;
+			letter-spacing: var(--ls-widest);
+			color: var(--color-text-muted);
+		}
+
+		.xp-label strong { color: var(--color-accent); font-size: var(--fs-md); }
+
+		.xp-hero {
+			position: relative;
+			min-height: 92vh;
+			display: flex;
+			align-items: flex-end;
+			overflow: hidden;
+			padding: var(--space-14) 0 var(--space-9);
+			border-bottom: 1px solid var(--color-border);
+		}
+
+		.xp-hero__media { position: absolute; inset: 0; z-index: 0; }
+
+		.xp-hero__media::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background:
+				linear-gradient(200deg, rgba(11,11,11,0.45) 0%, rgba(11,11,11,0.25) 45%, rgba(11,11,11,0.92) 100%),
+				linear-gradient(90deg, rgba(11,11,11,0.55) 0%, rgba(11,11,11,0) 60%);
+			z-index: 1;
+		}
+
+		.xp-hero__inner {
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			max-width: var(--container-max);
+			margin-inline: auto;
+			padding-inline: var(--container-padding);
+		}
+
+		/* --- B: tipogràfic amb tractament d'estampació --- */
+		.xp-typo {
+			font-family: var(--font-mono);
+			font-size: clamp(3.5rem, 11vw, 9.5rem);
+			line-height: 0.95;
+			letter-spacing: -0.01em;
+			margin: 0;
+			display: flex;
+			user-select: none;
+		}
+
+		.xp-typo span {
+			display: inline-block;
+			text-shadow: 0 10px 40px rgba(0,0,0,0.6);
+		}
+
+		/* desajust de màquina d'escriure — cada lletra balla una mica */
+		.xp-typo span:nth-child(1) { transform: translateY(2px) rotate(-1.2deg); }
+		.xp-typo span:nth-child(2) { transform: translateY(-3px) rotate(0.8deg); }
+		.xp-typo span:nth-child(3) { transform: translateY(1px) rotate(-0.5deg); }
+		.xp-typo span:nth-child(4) { transform: translateY(-2px) rotate(1deg); }
+		.xp-typo span:nth-child(5) { transform: translateY(3px) rotate(-2deg) scale(1.06); color: var(--color-accent); }
+		.xp-typo span:nth-child(6) { transform: translateY(-2px) rotate(0.6deg); }
+		.xp-typo span:nth-child(7) { transform: translateY(2px) rotate(-0.8deg); }
+
+		/* --- C: híbrid — wordmark discret + adreça gegant --- */
+		.xp-addr {
+			font-size: clamp(2rem, 5.5vw, 4.25rem);
+			line-height: 1.12;
+			letter-spacing: -0.01em;
+			margin: var(--space-6) 0 0;
+			max-width: 18ch;
+		}
+
+		.xp-addr em {
+			font-style: normal;
+			color: var(--color-accent);
+		}
+
+		.xp-meta {
+			margin-top: var(--space-6);
+			font-size: var(--fs-xs);
+			text-transform: uppercase;
+			letter-spacing: var(--ls-wider);
+			color: var(--color-text-muted);
+		}
+
+		.xp-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
+	</style>
+</head>
+<body>
+
+	<div class="xp-note">
+		<span>Document intern — tres tractaments del hero per triar</span>
+		<a href="index.html">← Tornar a la home (opció A aplicada)</a>
+	</div>
+
+	<!-- OPCIÓ A — wordmark oficial -->
+	<section class="xp-hero">
+		<span class="xp-label"><strong>A</strong><span>Wordmark oficial estampat — la tinta real d'Arnau</span></span>
+		<div class="xp-hero__media img-hero-home" role="img" aria-label="La barra del Direkte"></div>
+		<div class="xp-hero__inner">
+			<img src="assets/logo/wordmark.png" alt="DIREKTE" style="width: clamp(300px, 58vw, 860px); height: auto; filter: drop-shadow(0 12px 48px rgba(0,0,0,0.55));">
+			<div class="xp-meta">Barra de cuina estacional · Carrer de París, 200 · Eixample, Barcelona</div>
+			<div class="xp-actions">
+				<a href="#" class="btn btn--accent">Reserves</a>
+				<a href="#" class="btn btn--ghost">Menús</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- OPCIÓ B — tipogràfic amb desajust de màquina -->
+	<section class="xp-hero">
+		<span class="xp-label"><strong>B</strong><span>Tipogràfic amb desajust de màquina d'escriure</span></span>
+		<div class="xp-hero__media img-hero-home" role="img" aria-label="La barra del Direkte"></div>
+		<div class="xp-hero__inner">
+			<h2 class="xp-typo" aria-label="DIREKTE">
+				<span>D</span><span>I</span><span>R</span><span>E</span><span>K</span><span>T</span><span>E</span>
+			</h2>
+			<div class="xp-meta">Barra de cuina estacional · Carrer de París, 200 · Eixample, Barcelona</div>
+			<div class="xp-actions">
+				<a href="#" class="btn btn--accent">Reserves</a>
+				<a href="#" class="btn btn--ghost">Menús</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- OPCIÓ C — híbrid: wordmark discret + adreça gegant -->
+	<section class="xp-hero">
+		<span class="xp-label"><strong>C</strong><span>Híbrid — wordmark discret, l'adreça com a protagonista</span></span>
+		<div class="xp-hero__media img-hero-home" role="img" aria-label="La barra del Direkte"></div>
+		<div class="xp-hero__inner">
+			<img src="assets/logo/wordmark.png" alt="DIREKTE" style="width: clamp(180px, 22vw, 320px); height: auto;">
+			<h2 class="xp-addr">Barra de cuina estacional al carrer de París, <em>200</em>. Eixample, Barcelona.</h2>
+			<div class="xp-meta">Dt–Ds sopars · Ds migdia · Dg i Dl tancat</div>
+			<div class="xp-actions">
+				<a href="#" class="btn btn--accent">Reserves</a>
+				<a href="#" class="btn btn--ghost">Menús</a>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="assets/logo/k-seal.png">
+	<title>About — Direkte</title>
+	<meta name="description" content="Direkte. Arnau Muñío. De la Boqueria al carrer de París. Vint anys de cuina estacional.">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header class="site-header" id="site-header">
+		<div class="site-header__inner">
+			<a href="index.html" class="site-header__logo" aria-label="Direkte — inici">
+				<img src="assets/logo/wordmark.png" alt="Direkte" class="site-header__wordmark">
+			</a>
+
+			<nav class="site-nav" aria-label="Navegació principal">
+				<ul class="site-nav__list">
+					<li><a href="index.html" class="site-nav__link">Inici</a></li>
+					<li><a href="about.html" class="site-nav__link is-active">About</a></li>
+					<li><a href="vals.html" class="site-nav__link">Regala Direkte</a></li>
+				</ul>
+				<a href="index.html#reserves" class="btn btn--accent site-nav__cta">Reserves</a>
+			</nav>
+
+			<button class="site-nav__toggle" aria-label="Obrir menú" aria-expanded="false" aria-controls="mobile-menu">
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+
+	<!-- MENÚ MÒBIL -->
+	<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+		<nav aria-label="Navegació mòbil">
+			<ul class="mobile-menu__list">
+				<li><a href="index.html" class="mobile-menu__link"><span class="mobile-menu__num">01</span><span>Inici</span></a></li>
+				<li><a href="about.html" class="mobile-menu__link is-active"><span class="mobile-menu__num">02</span><span>About</span></a></li>
+				<li><a href="vals.html" class="mobile-menu__link"><span class="mobile-menu__num">03</span><span>Regala Direkte</span></a></li>
+				<li><a href="index.html#reserves" class="mobile-menu__link"><span class="mobile-menu__num">04</span><span>Reserves</span></a></li>
+			</ul>
+		</nav>
+		<div class="mobile-menu__meta">
+			<p>Carrer de París, 200 · Eixample · Barcelona</p>
+			<p>dimarts a divendres, sopars · dissabtes, migdia</p>
+			<p><a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
+		</div>
+	</div>
+
+	<main>
+
+		<!-- HERO PÀGINA -->
+		<section class="page-hero" data-screen-label="About — Hero">
+			<div class="page-hero__media img-about-hero" role="img" aria-label="Servei a la barra"></div>
+			<div class="scrim scrim--page" aria-hidden="true"></div>
+			<div class="page-hero__content">
+				<div class="kicker"><span class="kicker__num">—</span><span>About</span></div>
+				<h1 class="page-hero__title">Direkte.</h1>
+			</div>
+		</section>
+
+		<!-- EL CHEF -->
+		<section class="chef" data-screen-label="About — El chef">
+			<div class="container">
+				<div class="chef__grid">
+					<div class="chef__media-wrap media-frame rv">
+						<div class="chef__media img-chef-portrait media-zoom" role="img" aria-label="Servei a la barra"></div>
+					</div>
+
+					<div class="chef__text rv" style="--rv-delay: 140ms;">
+						<div class="kicker"><span class="kicker__num">01</span><span>El chef</span></div>
+						<h2 class="chef__title">Arnau Muñío</h2>
+
+						<div class="chef__prose">
+							<p>Onze anys a <strong>Comerç 24</strong> — on va arribar l'estrella Michelin — i un pas pel grup elBarri d'Albert Adrià van formar la cuina d'Arnau Muñío abans de fer-se pel seu compte.</p>
+							<p>El 2018 obre <strong>Direkte Boqueria</strong>: catorze metres quadrats, ell i dos cuiners, i una idea clara — cuina estacional, directa i feta a la vista. Pel camí, cuiner català de l'any.</p>
+							<p>El 2025 Direkte es trasllada al <strong>carrer de París</strong>, a l'Eixample. Mateix entusiasme, més espai: producte, moment, obrador de ferments propi i un celler triat un a un.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- GALERIA — cinta en loop -->
+		<section class="gallery-strip" aria-label="Galeria d'imatges del servei">
+			<div class="gallery-strip__track">
+				<!-- Primera tanda -->
+				<div class="gallery-strip__item img-gallery-1" role="img" aria-label="Postre"></div>
+				<div class="gallery-strip__item img-gallery-2" role="img" aria-label="Elaboració"></div>
+				<div class="gallery-strip__item img-gallery-3" role="img" aria-label="Plat"></div>
+				<div class="gallery-strip__item img-gallery-4" role="img" aria-label="Elaboració"></div>
+				<div class="gallery-strip__item img-gallery-5" role="img" aria-label="Plat"></div>
+				<div class="gallery-strip__item img-gallery-6" role="img" aria-label="Servei"></div>
+				<div class="gallery-strip__item img-gallery-7" role="img" aria-label="Torn"></div>
+
+				<!-- Segona tanda duplicada per al loop continu -->
+				<div class="gallery-strip__item img-gallery-1" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-2" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-3" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-4" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-5" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-6" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-7" role="img" aria-hidden="true"></div>
+			</div>
+		</section>
+
+		<!-- TIMELINE INTRO -->
+		<section class="timeline-intro" data-screen-label="About — El camí">
+			<div class="container">
+				<div class="kicker rv"><span class="kicker__num">02</span><span>El camí</span></div>
+				<h2 class="timeline-intro__title rv">De la Boqueria a l'Eixample</h2>
+			</div>
+		</section>
+
+		<!-- TIMELINE — línia cronològica unificada -->
+		<section class="timeline" data-screen-label="About — El camí (línia)">
+			<div class="container">
+				<div class="ctimeline">
+					<div class="ctimeline__line" aria-hidden="true"></div>
+
+					<div class="ctl ctl--l rv">
+						<div class="ctl__marker"><span>2018</span></div>
+						<div class="ctl__body">
+							<h3 class="ctl__heading">Direkte Boqueria</h3>
+							<p class="ctl__text">3 d'abril. Obrim al carrer de les Cabres, 13 — catorze metres quadrats, l'Arnau i dos cuiners. Cuiner català de l'any. Neixen .direktevins i el concepte de cuina estacional.</p>
+							<div class="ctl__media media-frame"><div class="ctl__media-img img-timeline-2018 media-zoom" role="img" aria-label="Direkte Boqueria, 2018"></div></div>
+						</div>
+					</div>
+
+					<div class="ctl ctl--r rv">
+						<div class="ctl__marker"><span>2019</span></div>
+						<div class="ctl__body">
+							<h3 class="ctl__heading">El primer reconeixement</h3>
+							<p class="ctl__text">Asian Award amb el ramen d'allipebre de ratjada. Recomanació de la Guia Repsol i de la Guia Michelin — plat i forquilla.</p>
+						</div>
+					</div>
+
+					<div class="ctl ctl--l rv">
+						<div class="ctl__marker"><span>2020</span></div>
+						<div class="ctl__body">
+							<h3 class="ctl__heading">La pandèmia</h3>
+							<p class="ctl__text">En lloc de tancar, obrim terrassa i dobla l'equip. Comencem a treballar amb productes silvestres recol·lectats.</p>
+						</div>
+					</div>
+
+					<div class="ctl ctl--r rv">
+						<div class="ctl__marker"><span>2021</span></div>
+						<div class="ctl__body">
+							<h3 class="ctl__heading">10 World's Coolest Places</h3>
+							<p class="ctl__text">Direkte entra a la llista de Forbes.</p>
+						</div>
+					</div>
+
+					<div class="ctl ctl--l rv">
+						<div class="ctl__marker"><span>2022</span></div>
+						<div class="ctl__body">
+							<h3 class="ctl__heading">Sol Repsol</h3>
+							<p class="ctl__text">Arriba el Sol Repsol. Comencem .direkteferments, l'obrador propi.</p>
+						</div>
+					</div>
+
+					<div class="ctl ctl--r rv">
+						<div class="ctl__marker"><span>2024</span></div>
+						<div class="ctl__body">
+							<h3 class="ctl__heading">Un nou projecte</h3>
+							<p class="ctl__text">Comença el projecte del carrer de París.</p>
+						</div>
+					</div>
+
+					<div class="ctl ctl--l rv">
+						<div class="ctl__marker"><span>2025</span></div>
+						<div class="ctl__body">
+							<h3 class="ctl__heading">Carrer de París, 200</h3>
+							<p class="ctl__text">5 d'abril, últim servei a la Boqueria. 17 d'abril, obrim a l'Eixample — 130 m² i cuina vista. Cargol Slow Food, Q Fem La Vanguardia i T de Oro de Tapas.</p>
+							<div class="ctl__media media-frame"><div class="ctl__media-img img-timeline-2025 media-zoom" role="img" aria-label="Nou espai al carrer de París"></div></div>
+						</div>
+					</div>
+
+					<div class="ctl ctl--today ctl--r rv">
+						<div class="ctl__marker"><span>Avui</span></div>
+						<div class="ctl__body">
+							<h3 class="ctl__heading">Avui</h3>
+							<p class="ctl__text">Seguim creixent, aprenent i evolucionant amb el mateix entusiasme que el primer dia.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- LA FAMÍLIA -->
+		<section class="family" id="familia" data-screen-label="About — La família">
+			<div class="container">
+				<div class="family__intro rv">
+					<div class="kicker"><span class="kicker__num">03</span><span>La família</span></div>
+					<h2 class="family__title">La família que ens ajuda a créixer.</h2>
+					<p class="family__lead">Artesans i cellers, fruit del diàleg i del respecte per unes disciplines que entenem com a germanes.</p>
+				</div>
+
+				<div class="family__groups">
+					<div class="family-group rv">
+						<h3 class="family-group__label">Artesans</h3>
+						<ul class="family-group__list">
+							<li>Carme Balada</li>
+							<li>Carlota San Pietro</li>
+							<li>Sandra Sangfangs</li>
+							<li>Luesma &amp; Vega</li>
+							<li>Utuwa Zoshi · Tòquio</li>
+						</ul>
+					</div>
+					<div class="family-group rv" style="--rv-delay: 120ms;">
+						<h3 class="family-group__label">Celler</h3>
+						<ul class="family-group__list">
+							<li>Thunder Wine Makers</li>
+							<li>Vinya Ferrer</li>
+							<li>Raül Bobet</li>
+							<li>Alfredo Arribas</li>
+							<li>Jordi Valls</li>
+							<li>Anima Mundi</li>
+							<li>Oller del Mas</li>
+							<li>.direktevins</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- .DIREKTEFERMENTS -->
+		<section class="ferments" id="ferments" data-screen-label="About — Ferments">
+			<div class="container">
+				<div class="ferments__header rv">
+					<div class="kicker"><span class="kicker__num">04</span><span>Obrador propi</span></div>
+					<h2 class="ferments__title">.direkteferments</h2>
+					<p class="ferments__lead">Fermentem a casa. Temps, sal i paciència.</p>
+				</div>
+				<ul class="ferments__grid rv">
+					<li class="ferment"><span class="ferment__num">01</span><span class="ferment__name">Misos de fruits secs</span></li>
+					<li class="ferment"><span class="ferment__num">02</span><span class="ferment__name">Vinagres casolans</span></li>
+					<li class="ferment"><span class="ferment__num">03</span><span class="ferment__name">Kombucha</span></li>
+					<li class="ferment"><span class="ferment__num">04</span><span class="ferment__name">Kefir d'aigua</span></li>
+					<li class="ferment"><span class="ferment__num">05</span><span class="ferment__name">Kefir de llet</span></li>
+					<li class="ferment"><span class="ferment__num">06</span><span class="ferment__name">Lactoferments</span></li>
+					<li class="ferment"><span class="ferment__num">07</span><span class="ferment__name">Mel de pinyes verdes</span></li>
+					<li class="ferment"><span class="ferment__num">08</span><span class="ferment__name">Ferments en sègol i arròs</span></li>
+					<li class="ferment"><span class="ferment__num">09</span><span class="ferment__name">Ratafia casolana</span></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- CTA FINAL -->
+		<section class="cta-final">
+			<div class="container container--narrow">
+				<div class="cta-final__actions rv">
+					<a href="index.html#reserves" class="btn btn--accent">Reserves</a>
+					<a href="vals.html" class="btn btn--ghost">Regala Direkte</a>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="site-footer__grid">
+				<div class="site-footer__brand">
+					<img src="assets/logo/wordmark.png" alt="Direkte" class="site-footer__wordmark" loading="lazy">
+					<p class="site-footer__tagline">Cuina directa.<br>Producte. Moment.</p>
+				</div>
+
+				<div class="site-footer__col">
+					<h4 class="site-footer__heading">Contacte</h4>
+					<ul class="site-footer__list">
+						<li>Carrer de París, 200</li>
+						<li>08036 Barcelona</li>
+						<li><a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></li>
+					</ul>
+				</div>
+
+				<div class="site-footer__col">
+					<h4 class="site-footer__heading">Horaris</h4>
+					<ul class="site-footer__list site-footer__hours">
+						<li><span>Dt – Dv</span><span>19:30 · 21:45</span></li>
+						<li><span>Ds</span><span>13:00 · 15:15</span></li>
+						<li class="is-closed"><span>Dg · Dl</span><span>Tancat</span></li>
+					</ul>
+				</div>
+
+				<div class="site-footer__col">
+					<h4 class="site-footer__heading">Enllaços</h4>
+					<ul class="site-footer__list">
+						<li><a href="about.html">About</a></li>
+						<li><a href="index.html#reserves">Reserves</a></li>
+						<li><a href="vals.html">Regala Direkte</a></li>
+					</ul>
+				</div>
+
+				<div class="site-footer__col">
+					<h4 class="site-footer__heading">Segueix-nos</h4>
+					<ul class="site-footer__list">
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">X</a></li>
+						<li><a href="#">LinkedIn</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="site-footer__bottom">
+				<p class="site-footer__legal">© 2026 Direkte · Tots els drets reservats</p>
+				<span class="site-footer__goat-link" title="Carrer de les Cabres, 13 — on tot va començar">
+					<img src="assets/logo/goat-alpha.png" alt="" class="site-footer__goat" aria-hidden="true">
+				</span>
+				<ul class="site-footer__legal-links">
+					<li><a href="#">Avís legal</a></li>
+					<li><a href="#">Privacitat</a></li>
+					<li><a href="#">Cookies</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
