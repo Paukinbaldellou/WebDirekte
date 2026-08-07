@@ -4,31 +4,79 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="assets/logo/k-seal.png">
-	<title>Regala Direkte — Vals regal</title>
-	<meta name="description" content="Regala una experiència Direkte. Vals regal per als tres menús o d'import obert. Validesa d'1 any.">
+	<title>Regala DIREKTE — Vals regal</title>
+	<meta name="description" content="Regala una experiència Direkte. Vals regal dels menús de temporada, maridatges i detalls per acompanyar. Validesa d'1 any.">
+	<link rel="canonical" href="https://direkte.cat/vals.html">
+	<link rel="alternate" hreflang="ca" href="https://direkte.cat/vals.html">
+	<link rel="alternate" hreflang="es" href="https://direkte.cat/es/vals.html">
+	<link rel="alternate" hreflang="en" href="https://direkte.cat/en/vals.html">
+	<link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/vals.html">
+	<link rel="alternate" hreflang="x-default" href="https://direkte.cat/vals.html">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Direkte">
+	<meta property="og:title" content="Regala DIREKTE — Vals regal">
+	<meta property="og:description" content="Vals regal dels menús de temporada, maridatges i detalls per acompanyar. Per email, llest per enviar.">
+	<meta property="og:url" content="https://direkte.cat/vals.html">
+	<meta property="og:image" content="https://direkte.cat/assets/img/gift-teaser.jpg">
+	<meta property="og:locale" content="ca_ES">
+	<meta name="twitter:card" content="summary_large_image">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "OfferCatalog",
+		"name": "Vals regal Direkte",
+		"url": "https://direkte.cat/vals.html",
+		"itemListElement": [
+			{"@type": "Offer", "name": "Menú Direkte", "price": "78", "priceCurrency": "EUR"},
+			{"@type": "Offer", "name": "Menú Boqueria", "price": "92", "priceCurrency": "EUR"},
+			{"@type": "Offer", "name": "Menú Eixample", "price": "104", "priceCurrency": "EUR"}
+		]
+	}
+	</script>
 </head>
 <body>
+
+<template id="__bundler_thumbnail">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+		<rect width="100" height="100" fill="#0B0B0B"/>
+		<circle cx="50" cy="50" r="27" fill="none" stroke="#E8562D" stroke-width="2"/>
+		<text x="50" y="50" fill="#F5F5F5" font-family="Courier New, monospace" font-size="30" font-weight="700" text-anchor="middle" dominant-baseline="central">K</text>
+	</svg>
+</template>
+
 
 	<!-- HEADER -->
 	<header class="site-header" id="site-header">
 		<div class="site-header__inner">
-			<a href="index.html" class="site-header__logo" aria-label="Direkte — inici">
-				<img src="assets/logo/wordmark.png" alt="Direkte" class="site-header__wordmark">
+			<a href="index.html" class="site-header__logo" aria-label="Direkte — inici" title="Carrer de les Cabres, 13 — on tot va començar">
+				<img src="assets/logo/goat-alpha.png" alt="Direkte" class="site-header__goat">
 			</a>
 
 			<nav class="site-nav" aria-label="Navegació principal">
 				<ul class="site-nav__list">
 					<li><a href="index.html" class="site-nav__link">Inici</a></li>
 					<li><a href="about.html" class="site-nav__link">About</a></li>
-					<li><a href="vals.html" class="site-nav__link is-active">Regala Direkte</a></li>
+					<li><a href="vals.html" class="site-nav__link is-active">Regala</a></li>
 				</ul>
-				<a href="index.html#reserves" class="btn btn--accent site-nav__cta">Reserves</a>
+				<div class="site-nav__end">
+					<details class="lang-menu">
+						<summary class="lang-menu__current" aria-label="CA">CA</summary>
+						<div class="lang-menu__list">
+						<a href="vals.html" class="is-active" hreflang="ca">CA</a>
+						<a href="es/vals.html" hreflang="es">ES</a>
+						<a href="en/vals.html" hreflang="en">EN</a>
+						<a href="fr/vals.html" hreflang="fr">FR</a>
+						</div>
+					</details>
+					<a href="index.html#reserves" class="btn btn--accent site-nav__cta">Reserves</a>
+				</div>
 			</nav>
 
 			<button class="site-nav__toggle" aria-label="Obrir menú" aria-expanded="false" aria-controls="mobile-menu">
@@ -44,14 +92,15 @@
 			<ul class="mobile-menu__list">
 				<li><a href="index.html" class="mobile-menu__link"><span class="mobile-menu__num">01</span><span>Inici</span></a></li>
 				<li><a href="about.html" class="mobile-menu__link"><span class="mobile-menu__num">02</span><span>About</span></a></li>
-				<li><a href="vals.html" class="mobile-menu__link is-active"><span class="mobile-menu__num">03</span><span>Regala Direkte</span></a></li>
+				<li><a href="vals.html" class="mobile-menu__link is-active"><span class="mobile-menu__num">03</span><span>Regala DIREKTE</span></a></li>
 				<li><a href="index.html#reserves" class="mobile-menu__link"><span class="mobile-menu__num">04</span><span>Reserves</span></a></li>
 			</ul>
 		</nav>
 		<div class="mobile-menu__meta">
 			<p>Carrer de París, 200 · Eixample · Barcelona</p>
-			<p>dimarts a divendres, sopars · dissabtes, migdia</p>
-			<p><a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
+			<p>dimarts a divendres, sopar · dissabte, dinar</p>
+			<p><a href="tel:+34934508789">934 50 87 89</a> · <a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
+			<p class="mobile-menu__langs"><a href="vals.html" class="is-active">CA</a> · <a href="es/vals.html">ES</a> · <a href="en/vals.html">EN</a> · <a href="fr/vals.html">FR</a></p>
 		</div>
 	</div>
 
@@ -61,7 +110,7 @@
 		<section class="vals-hero-typo" data-screen-label="Vals — Hero">
 			<div class="container">
 				<div class="kicker"><span class="kicker__num">—</span><span>Vals regal</span></div>
-				<h1 class="vals-hero-typo__title">Regala Direkte.</h1>
+				<h1 class="vals-hero-typo__title">Regala DIREKTE.</h1>
 				<p class="vals-hero-typo__sub">Pagament segur amb Stripe · Per email, llest per enviar</p>
 			</div>
 		</section>
@@ -70,29 +119,16 @@
 		<section class="vals-products" id="productes" data-screen-label="Vals — Productes">
 			<div class="container">
 
-				<!-- Maridatge — toggle que aplica a tots els menús -->
-				<div class="pairing-toggle rv">
-					<label class="pairing-toggle__label">
-						<input type="checkbox" id="pairing" class="pairing-toggle__input">
-						<span class="pairing-toggle__box" aria-hidden="true"></span>
-						<span class="pairing-toggle__text">
-							Afegir <strong>maridatge de vins</strong>
-							<span class="pairing-toggle__price">+ 45 €</span>
-						</span>
-					</label>
-					<p class="pairing-toggle__hint">Selecció del nostre celler. Una copa per plat.</p>
-				</div>
-
 				<div class="vals-list">
 
 					<!-- TODO Arnau: substituir cada href="#" pel Payment Link de Stripe (https://buy.stripe.com/...). Per a l'import obert, crea un Payment Link amb «el client tria l'import». -->
 
-					<!-- 01 — DIREKTE -->
+					<!-- 01 — MENÚ DIREKTE -->
 					<article class="val-item rv">
 						<div class="val-item__main">
 							<span class="val-item__num">01</span>
 							<div class="val-item__info">
-								<h3 class="val-item__name">Direkte</h3>
+								<h3 class="val-item__name">Menú Direkte</h3>
 								<p class="val-item__detail">7 plats · 2 postres</p>
 							</div>
 							<div class="val-item__price">
@@ -100,15 +136,20 @@
 								<span class="val-item__price-unit">p.p.</span>
 							</div>
 						</div>
+						<label class="val-pairing">
+							<input type="checkbox" class="val-pairing__input" data-extra="54">
+							<span class="val-pairing__box" aria-hidden="true"></span>
+							<span class="val-pairing__text">Afegir maridatge Direkte <span class="val-pairing__price">+ 54 €</span></span>
+						</label>
 						<a href="#" data-stripe="direkte" class="btn btn--accent btn--block val-item__cta">Regalar</a>
 					</article>
 
-					<!-- 02 — BOQUERIA -->
+					<!-- 02 — MENÚ BOQUERIA -->
 					<article class="val-item rv" style="--rv-delay: 90ms;">
 						<div class="val-item__main">
 							<span class="val-item__num">02</span>
 							<div class="val-item__info">
-								<h3 class="val-item__name">Boqueria</h3>
+								<h3 class="val-item__name">Menú Boqueria</h3>
 								<p class="val-item__detail">10 plats · 2 postres</p>
 							</div>
 							<div class="val-item__price">
@@ -116,15 +157,20 @@
 								<span class="val-item__price-unit">p.p.</span>
 							</div>
 						</div>
+						<label class="val-pairing">
+							<input type="checkbox" class="val-pairing__input" data-extra="64">
+							<span class="val-pairing__box" aria-hidden="true"></span>
+							<span class="val-pairing__text">Afegir maridatge Boqueria <span class="val-pairing__price">+ 64 €</span></span>
+						</label>
 						<a href="#" data-stripe="boqueria" class="btn btn--accent btn--block val-item__cta">Regalar</a>
 					</article>
 
-					<!-- 03 — EIXAMPLE -->
+					<!-- 03 — MENÚ EIXAMPLE -->
 					<article class="val-item rv" style="--rv-delay: 180ms;">
 						<div class="val-item__main">
 							<span class="val-item__num">03</span>
 							<div class="val-item__info">
-								<h3 class="val-item__name">Eixample</h3>
+								<h3 class="val-item__name">Menú Eixample</h3>
 								<p class="val-item__detail">12 plats · 3 postres</p>
 							</div>
 							<div class="val-item__price">
@@ -132,6 +178,11 @@
 								<span class="val-item__price-unit">p.p.</span>
 							</div>
 						</div>
+						<label class="val-pairing">
+							<input type="checkbox" class="val-pairing__input" data-extra="74">
+							<span class="val-pairing__box" aria-hidden="true"></span>
+							<span class="val-pairing__text">Afegir maridatge Eixample <span class="val-pairing__price">+ 74 €</span></span>
+						</label>
 						<a href="#" data-stripe="eixample" class="btn btn--accent btn--block val-item__cta">Regalar</a>
 					</article>
 
@@ -161,6 +212,28 @@
 						<a href="#" data-stripe="import-obert" class="btn btn--accent btn--block val-item__cta">Regalar</a>
 					</article>
 
+				</div>
+
+				<!-- EXTRES -->
+				<div class="extras rv">
+					<h2 class="extras__title">Per acompanyar</h2>
+					<ul class="extras__list">
+						<li class="extra">
+							<span class="extra__name">1 ampolla de vi</span>
+							<span class="extra__price">38 €</span>
+							<a href="#" data-stripe="ampolla-vi" class="extra__cta">Regalar</a>
+						</li>
+						<li class="extra">
+							<span class="extra__name">2 copes d'escumós</span>
+							<span class="extra__price">14 €</span>
+							<a href="#" data-stripe="copes-escumos" class="extra__cta">Regalar</a>
+						</li>
+						<li class="extra">
+							<span class="extra__name">2 copes d'escumós + 2 serveis d'aigua + 2 cafès</span>
+							<span class="extra__price">25 €</span>
+							<a href="#" data-stripe="pack-escumos" class="extra__cta">Regalar</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -219,21 +292,25 @@
 		<div class="container">
 			<div class="site-footer__grid">
 				<div class="site-footer__brand">
-					<img src="assets/logo/wordmark.png" alt="Direkte" class="site-footer__wordmark" loading="lazy">
-					<p class="site-footer__tagline">Cuina directa.<br>Producte. Moment.</p>
+					<img src="assets/logo/wordmark-clean.png" alt="Direkte" class="site-footer__wordmark" loading="lazy">
+					<div class="site-footer__awards" aria-label="Guia Michelin i Sol Repsol">
+						<img src="assets/awards/michelin-plate.png" alt="Guia Michelin" loading="lazy">
+						<img src="assets/awards/repsol-plate.svg" alt="1 Sol Guía Repsol" loading="lazy">
+					</div>
 				</div>
 
 				<div class="site-footer__col">
 					<h4 class="site-footer__heading">Contacte</h4>
 					<ul class="site-footer__list">
 						<li>Carrer de París, 200</li>
-						<li>08036 Barcelona</li>
+						<li>08008 Barcelona</li>
+						<li><a href="tel:+34934508789">934 50 87 89</a></li>
 						<li><a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></li>
 					</ul>
 				</div>
 
 				<div class="site-footer__col">
-					<h4 class="site-footer__heading">Horaris</h4>
+					<h4 class="site-footer__heading">Horari</h4>
 					<ul class="site-footer__list site-footer__hours">
 						<li><span>Dt – Dv</span><span>19:30 · 21:45</span></li>
 						<li><span>Ds</span><span>13:00 · 15:15</span></li>
@@ -246,29 +323,24 @@
 					<ul class="site-footer__list">
 						<li><a href="about.html">About</a></li>
 						<li><a href="index.html#reserves">Reserves</a></li>
-						<li><a href="vals.html">Regala Direkte</a></li>
+						<li><a href="vals.html">Regala DIREKTE</a></li>
 					</ul>
 				</div>
 
 				<div class="site-footer__col">
 					<h4 class="site-footer__heading">Segueix-nos</h4>
 					<ul class="site-footer__list">
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">X</a></li>
-						<li><a href="#">LinkedIn</a></li>
+						<li><a href="https://www.instagram.com/direkte_restaurant/" target="_blank" rel="noopener">Instagram</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="site-footer__bottom">
 				<p class="site-footer__legal">© 2026 Direkte · Tots els drets reservats</p>
-				<span class="site-footer__goat-link" title="Carrer de les Cabres, 13 — on tot va començar">
-					<img src="assets/logo/goat-alpha.png" alt="" class="site-footer__goat" aria-hidden="true">
-				</span>
 				<ul class="site-footer__legal-links">
-					<li><a href="#">Avís legal</a></li>
-					<li><a href="#">Privacitat</a></li>
-					<li><a href="#">Cookies</a></li>
+					<li><a href="avis-legal.html">Avís legal</a></li>
+					<li><a href="privacitat.html">Privacitat</a></li>
+					<li><a href="cookies.html">Cookies</a></li>
 				</ul>
 			</div>
 		</div>

@@ -4,31 +4,91 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="assets/logo/k-seal.png">
-	<title>Direkte — Cuina estacional · Eixample, Barcelona</title>
-	<meta name="description" content="Direkte. Cuina estacional al carrer de París, 200, Eixample. Tres menús, només per encàrrec.">
+	<title>Direkte — Barra de cuina estacional a l'Eixample, Barcelona</title>
+	<meta name="description" content="DIREKTE, la barra de cuina estacional del chef Arnau Muñío a l'Eixample de Barcelona. Menús de temporada, celler propi i reserves en línia. Carrer de París, 200.">
+	<link rel="canonical" href="https://direkte.cat/">
+	<link rel="alternate" hreflang="ca" href="https://direkte.cat/">
+	<link rel="alternate" hreflang="es" href="https://direkte.cat/es/">
+	<link rel="alternate" hreflang="en" href="https://direkte.cat/en/">
+	<link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/">
+	<link rel="alternate" hreflang="x-default" href="https://direkte.cat/">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Direkte">
+	<meta property="og:title" content="Direkte — Barra de cuina estacional a l'Eixample, Barcelona">
+	<meta property="og:description" content="Dues barres baixes al voltant de la cuina per tastar el millor que ens dóna cada estació. Menús de temporada i reserves en línia.">
+	<meta property="og:url" content="https://direkte.cat/">
+	<meta property="og:image" content="https://direkte.cat/assets/img/hero-home.jpg">
+	<meta property="og:locale" content="ca_ES">
+	<meta name="twitter:card" content="summary_large_image">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"name": "Direkte",
+		"alternateName": "DIREKTE",
+		"url": "https://direkte.cat/",
+		"image": "https://direkte.cat/assets/img/hero-home.jpg",
+		"servesCuisine": ["Cuina estacional", "Cuina catalana"],
+		"priceRange": "€€€",
+		"telephone": "+34934508789",
+		"email": "reserves@direkte.cat",
+		"address": {"@type": "PostalAddress", "streetAddress": "Carrer de París, 200", "addressLocality": "Barcelona", "postalCode": "08008", "addressCountry": "ES"},
+		"geo": {"@type": "GeoCoordinates", "latitude": 41.3907, "longitude": 2.1526},
+		"acceptsReservations": "https://widget.thefork.com/ca/b72cf5b4-fcca-4a35-8161-50a0f3b9ec61",
+		"openingHoursSpecification": [
+			{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "19:30", "closes": "23:45"},
+			{"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "13:00", "closes": "17:00"}
+		],
+		"founder": {"@type": "Person", "name": "Arnau Muñío", "jobTitle": "Chef"},
+		"award": ["Guia Michelin — recomanat", "1 Sol Guía Repsol", "T de Oro — Revista Tapas · Forbes", "Cuiner de l'any 2018", "Macarfi Top 50", "OAD"],
+		"sameAs": ["https://www.instagram.com/direkte_restaurant/", "https://share.google/BHhJw73ZDPwbo8aN2"],
+		"hasMap": "https://share.google/BHhJw73ZDPwbo8aN2"
+	}
+	</script>
 </head>
 <body>
+
+<template id="__bundler_thumbnail">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+		<rect width="100" height="100" fill="#0B0B0B"/>
+		<circle cx="50" cy="50" r="27" fill="none" stroke="#E8562D" stroke-width="2"/>
+		<text x="50" y="50" fill="#F5F5F5" font-family="Courier New, monospace" font-size="30" font-weight="700" text-anchor="middle" dominant-baseline="central">K</text>
+	</svg>
+</template>
+
 
 	<!-- HEADER -->
 	<header class="site-header" id="site-header">
 		<div class="site-header__inner">
-			<a href="index.html" class="site-header__logo" aria-label="Direkte — inici">
-				<img src="assets/logo/wordmark.png" alt="Direkte" class="site-header__wordmark">
+			<a href="index.html" class="site-header__logo" aria-label="Direkte — inici" title="Carrer de les Cabres, 13 — on tot va començar">
+				<img src="assets/logo/goat-alpha.png" alt="Direkte" class="site-header__goat">
 			</a>
 
 			<nav class="site-nav" aria-label="Navegació principal">
 				<ul class="site-nav__list">
 					<li><a href="index.html" class="site-nav__link is-active">Inici</a></li>
 					<li><a href="about.html" class="site-nav__link">About</a></li>
-					<li><a href="vals.html" class="site-nav__link">Regala Direkte</a></li>
+					<li><a href="vals.html" class="site-nav__link">Regala</a></li>
 				</ul>
-				<a href="#reserves" class="btn btn--accent site-nav__cta">Reserves</a>
+				<div class="site-nav__end">
+					<details class="lang-menu">
+						<summary class="lang-menu__current" aria-label="CA">CA</summary>
+						<div class="lang-menu__list">
+						<a href="index.html" class="is-active" hreflang="ca">CA</a>
+						<a href="es/index.html" hreflang="es">ES</a>
+						<a href="en/index.html" hreflang="en">EN</a>
+						<a href="fr/index.html" hreflang="fr">FR</a>
+						</div>
+					</details>
+					<a href="#reserves" class="btn btn--accent site-nav__cta">Reserves</a>
+				</div>
 			</nav>
 
 			<button class="site-nav__toggle" aria-label="Obrir menú" aria-expanded="false" aria-controls="mobile-menu">
@@ -44,14 +104,15 @@
 			<ul class="mobile-menu__list">
 				<li><a href="index.html" class="mobile-menu__link is-active"><span class="mobile-menu__num">01</span><span>Inici</span></a></li>
 				<li><a href="about.html" class="mobile-menu__link"><span class="mobile-menu__num">02</span><span>About</span></a></li>
-				<li><a href="vals.html" class="mobile-menu__link"><span class="mobile-menu__num">03</span><span>Regala Direkte</span></a></li>
+				<li><a href="vals.html" class="mobile-menu__link"><span class="mobile-menu__num">03</span><span>Regala DIREKTE</span></a></li>
 				<li><a href="#reserves" class="mobile-menu__link" data-menu-close><span class="mobile-menu__num">04</span><span>Reserves</span></a></li>
 			</ul>
 		</nav>
 		<div class="mobile-menu__meta">
 			<p>Carrer de París, 200 · Eixample · Barcelona</p>
-			<p>dimarts a divendres, sopars · dissabtes, migdia</p>
-			<p><a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
+			<p>dimarts a divendres, sopar · dissabte, dinar</p>
+			<p><a href="tel:+34934508789">934 50 87 89</a> · <a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
+			<p class="mobile-menu__langs"><a href="index.html" class="is-active">CA</a> · <a href="es/index.html">ES</a> · <a href="en/index.html">EN</a> · <a href="fr/index.html">FR</a></p>
 		</div>
 	</div>
 
@@ -65,10 +126,10 @@
 			<div class="hero__inner">
 				<div class="hero__brand">
 					<h1 class="hero__wordmark" style="margin: 0;">
-						<img src="assets/logo/wordmark.png" alt="DIREKTE" class="hero__wordmark-img">
+						<img src="assets/logo/wordmark-clean.png" alt="DIREKTE" class="hero__wordmark-img">
 					</h1>
 
-					<p class="hero__tagline">Cuina estacional</p>
+					<p class="hero__tagline">Barra de cuina estacional</p>
 
 					<div class="hero__address">
 						<span>Carrer de París, 200</span>
@@ -76,113 +137,82 @@
 						<span>Eixample, Barcelona</span>
 					</div>
 
-					<p class="hero__hours">dimarts a divendres, sopars · dissabtes, migdia</p>
+					<p class="hero__hours">dimarts a divendres, sopar · dissabte, dinar</p>
 
 					<div class="hero__actions">
 						<a href="#reserves" class="btn btn--accent">Reserves</a>
 						<a href="#menus" class="btn btn--ghost">Menús</a>
-						<a href="vals.html" class="btn btn--ghost">Regala Direkte</a>
+						<a href="vals.html" class="btn btn--ghost">Regala DIREKTE</a>
 					</div>
 				</div>
 
 				<div class="hero__aside">
 					<img src="assets/logo/k-seal-bone.png" alt="" class="hero__seal" aria-hidden="true">
-					<div class="hero__scroll" aria-hidden="true">
-						<span>Descobrir</span>
-						<div class="hero__scroll-line"></div>
-					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- CINTA DE DADES -->
-		<div class="data-strip" aria-label="Dades del restaurant">
+		<!-- CINTA -->
+		<div class="data-strip" aria-label="El concepte">
 			<div class="data-strip__row">
-				<span class="data-strip__item">14 places per torn</span>
-				<span class="data-strip__item">Dos torns per nit</span>
-				<span class="data-strip__item">Cuina vista</span>
+				<span class="data-strip__item">Dues barres baixes al voltant de la cuina per tastar el millor que ens dóna cada estació</span>
 			</div>
 		</div>
 
-		<!-- ELS MENÚS -->
-		<section class="menus" id="menus" data-screen-label="Home — Menús">
+
+		<!-- MENÚS + HORARI -->
+		<section class="offer" id="menus" data-screen-label="Home — Menús i horari">
 			<div class="container">
-				<div class="menus__header rv">
-					<div>
-						<div class="kicker"><span class="kicker__num">01</span><span>Els menús</span></div>
-						<h2 class="menus__title">Tres menús.</h2>
-					</div>
-					<p class="menus__note">Preus per persona · Maridatge de vins a banda</p>
+				<div class="kicker rv"><span class="kicker__num">01</span><span>Els menús</span></div>
+				<h2 class="offer__title rv">Els nostres menús de temporada.</h2>
+
+			<div class="menu-ledger">
+				<div class="menu-line rv">
+					<span class="menu-line__num">01</span>
+					<h3 class="menu-line__name">Direkte</h3>
+					<p class="menu-line__detail">7 plats · 2 postres</p>
+					<span class="menu-line__price" data-price="78">78 €<span class="menu-line__pp">per persona</span></span>
 				</div>
 
-				<div class="menu-ledger">
-					<div class="menu-line rv">
-						<span class="menu-line__num">01</span>
-						<h3 class="menu-line__name">Direkte</h3>
-						<p class="menu-line__detail">7 plats · 2 postres</p>
-						<span class="menu-line__price" data-price="78">78 €</span>
-					</div>
+				<div class="menu-line rv" style="--rv-delay: 90ms;">
+					<span class="menu-line__num">02</span>
+					<h3 class="menu-line__name">Boqueria</h3>
+					<p class="menu-line__detail">10 plats · 2 postres</p>
+					<span class="menu-line__price" data-price="92">92 €<span class="menu-line__pp">per persona</span></span>
+				</div>
 
-					<div class="menu-line rv" style="--rv-delay: 90ms;">
-						<span class="menu-line__num">02</span>
-						<h3 class="menu-line__name">Boqueria</h3>
-						<p class="menu-line__detail">10 plats · 2 postres</p>
-						<span class="menu-line__price" data-price="92">92 €</span>
-					</div>
-
-					<div class="menu-line rv" style="--rv-delay: 180ms;">
-						<span class="menu-line__num">03</span>
-						<h3 class="menu-line__name">Eixample</h3>
-						<p class="menu-line__detail">12 plats · 3 postres <span class="menu-line__tag">Només per encàrrec</span></p>
-						<span class="menu-line__price" data-price="104">104 €</span>
+				<div class="menu-line rv" style="--rv-delay: 180ms;">
+					<span class="menu-line__num">03</span>
+					<h3 class="menu-line__name">Eixample</h3>
+					<p class="menu-line__detail">12 plats · 3 postres <span class="menu-line__tag">Només per encàrrec</span></p>
+					<span class="menu-line__price" data-price="104">104 €<span class="menu-line__pp">per persona</span></span>
+				</div>
+			</div>
+				<div class="hours-line rv" id="horaris">
+					<span class="hours-line__label">Horari</span>
+					<div class="hours-line__items">
+						<span class="hours-line__item"><span class="hours-line__day">De dimarts a divendres, sopar</span><span class="hours-line__time">19:30 · 21:45</span></span>
+						<span class="hours-line__item"><span class="hours-line__day">Dissabte, dinar</span><span class="hours-line__time">13:00 · 15:15</span></span>
+						<span class="hours-line__item hours-line__item--closed"><span class="hours-line__day">Diumenge i dilluns</span><span class="hours-line__time">Tancat</span></span>
 					</div>
 				</div>
 
-				<div class="menu-ledger__foot rv">
+				<div class="offer__foot rv">
 					<a href="#reserves" class="btn btn--accent">Reserves</a>
+					<a href="vals.html" class="btn btn--ghost">Regala DIREKTE</a>
 				</div>
 			</div>
-		</section>
-
-		<!-- HORARIS -->
-		<section class="hours-block" id="horaris" data-screen-label="Home — Horaris">
-			<div class="container">
-				<div class="hours-block__header rv">
-					<div class="kicker"><span class="kicker__num">02</span><span>Horaris</span></div>
-				</div>
-				<div class="hours-ledger">
-					<div class="hours-row rv">
-						<span class="hours-row__day">De dimarts a divendres</span>
-						<span class="hours-row__torns">
-							<span class="hours-torn"><span class="hours-torn__label">1r torn</span><span class="hours-torn__time">19:30</span></span>
-							<span class="hours-torn"><span class="hours-torn__label">2n torn</span><span class="hours-torn__time">21:45</span></span>
-						</span>
-					</div>
-					<div class="hours-row rv" style="--rv-delay: 90ms;">
-						<span class="hours-row__day">Dissabtes</span>
-						<span class="hours-row__torns">
-							<span class="hours-torn"><span class="hours-torn__label">1r torn</span><span class="hours-torn__time">13:00</span></span>
-							<span class="hours-torn"><span class="hours-torn__label">2n torn</span><span class="hours-torn__time">15:15</span></span>
-						</span>
-					</div>
-					<div class="hours-row hours-row--closed rv" style="--rv-delay: 180ms;">
-						<span class="hours-row__day">Diumenge i dilluns</span>
-						<span class="hours-row__torns"><span class="hours-closed">Tancat</span></span>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<!-- SLIDESHOW — cinta en loop -->
 		<section class="gallery-strip gallery-strip--home" aria-label="Galeria del Direkte">
 			<div class="gallery-strip__track">
 				<!-- Primera tanda -->
-				<div class="gallery-strip__item img-menu-direkte" role="img" aria-label="Plat"></div>
-				<div class="gallery-strip__item img-bar-concept" role="img" aria-label="La barra"></div>
-				<div class="gallery-strip__item img-menu-boqueria" role="img" aria-label="Plat"></div>
-				<div class="gallery-strip__item img-chef-teaser" role="img" aria-label="Cuina"></div>
-				<div class="gallery-strip__item img-menu-eixample" role="img" aria-label="Plat"></div>
-				<div class="gallery-strip__item img-gift-teaser" role="img" aria-label="Detall"></div>
+				<div class="gallery-strip__item img-menu-direkte" role="img" aria-label="Plat del menú Direkte"></div>
+				<div class="gallery-strip__item img-bar-concept" role="img" aria-label="La barra de fusta del Direkte"></div>
+				<div class="gallery-strip__item img-menu-boqueria" role="img" aria-label="Plat del menú Boqueria"></div>
+				<div class="gallery-strip__item img-chef-teaser" role="img" aria-label="Les mans del chef emplatant"></div>
+				<div class="gallery-strip__item img-menu-eixample" role="img" aria-label="Plat del menú Eixample"></div>
+				<div class="gallery-strip__item img-gift-teaser" role="img" aria-label="Postre de matcha de l'obrador"></div>
 				<!-- Segona tanda per al loop continu -->
 				<div class="gallery-strip__item img-menu-direkte" role="img" aria-hidden="true"></div>
 				<div class="gallery-strip__item img-bar-concept" role="img" aria-hidden="true"></div>
@@ -193,31 +223,82 @@
 			</div>
 		</section>
 
-		<!-- RECONEIXEMENTS + PREMSA -->
-		<section class="awards" data-screen-label="Home — Reconeixements">
-			<div class="container">
-				<div class="kicker rv"><span class="kicker__num">03</span><span>Reconeixements</span></div>
+		</section>
 
-				<div class="awards__grid rv">
-					<div class="award">
-						<img src="assets/awards/michelin.png" alt="Michelin Selected 2025" class="award__logo award__logo--michelin" loading="lazy">
-						<span class="award__caption">Michelin Selected 2025</span>
-					</div>
-					<div class="award">
-						<img src="assets/awards/repsol.svg" alt="1 Sol Guía Repsol 2025" class="award__logo award__logo--repsol" loading="lazy">
-						<span class="award__caption">1 Sol Guía Repsol 2025</span>
+		<!-- RESERVES + CONTACTE -->
+		<section class="reserves-block reserves-block--v2" id="reserves" data-screen-label="Home — Reserves">
+			<img src="assets/logo/k-seal-bone.png" alt="" class="reserves-block__seal" aria-hidden="true">
+			<div class="container container--narrow">
+				<div class="kicker rv"><span class="kicker__num">02</span><span>Reserves</span></div>
+				<iframe
+					src="https://widget.thefork.com/ca/b72cf5b4-fcca-4a35-8161-50a0f3b9ec61"
+					title="Reserves — Direkte"
+					class="reserves__iframe"
+					allow="payment *"
+					loading="lazy"></iframe>
+
+				<div class="reserves__contact rv">
+					<p class="reserves__contact-text">Per a grups de més de 4 persones o per a qualsevol dubte pots contactar amb nosaltres al</p>
+					<div class="reserves__contact-links">
+						<a href="tel:+34934508789" class="contact-block__link">934 50 87 89</a>
+					<a href="mailto:reserves@direkte.cat" class="contact-block__link">reserves@direkte.cat</a>
 					</div>
 				</div>
 
-				<ul class="distinctions rv">
-					<li class="distinction"><span class="distinction__name">T de Oro</span><span class="distinction__source">Revista Tapas · Forbes</span></li>
-					<li class="distinction"><span class="distinction__name">Millor iniciativa en restauració</span><span class="distinction__source">Q Fem · La Vanguardia '25</span></li>
-					<li class="distinction"><span class="distinction__name">Cargol Slow Food</span><span class="distinction__source">Barcelona '25</span></li>
-					<li class="distinction"><span class="distinction__name">10 World's Coolest Places</span><span class="distinction__source">Forbes '20</span></li>
-					<li class="distinction"><span class="distinction__name">Asian Awards</span><span class="distinction__source">2019</span></li>
-					<li class="distinction"><span class="distinction__name">OAD Top European Restaurants</span><span class="distinction__source">&nbsp;</span></li>
-					<li class="distinction"><span class="distinction__name">Top Restaurants</span><span class="distinction__source">Time Out</span></li>
-					<li class="distinction"><span class="distinction__name">Macarfi</span><span class="distinction__source">&nbsp;</span></li>
+				<div class="contact-map rv" style="--rv-delay: 180ms;">
+					<div class="contact-map__head">
+						<p class="contact-map__address">La barra és al Carrer de París, 200</p>
+						<a href="https://share.google/BHhJw73ZDPwbo8aN2" target="_blank" rel="noopener" class="contact-map__link">Veure a Google Maps</a>
+					</div>
+					<iframe
+						src="https://www.google.com/maps?q=Carrer+de+Par%C3%ADs+200,+08008+Barcelona&output=embed&z=16"
+						title="Mapa — Direkte, Carrer de París 200, Barcelona"
+						class="contact-map__frame"
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</section>
+
+		<!-- REGALA DIREKTE — teaser -->
+		<section class="gift-teaser gift-teaser--center" data-screen-label="Home — Regala">
+			<div class="gift-teaser__media img-gift-teaser" role="img" aria-label="Detall gastronòmic"></div>
+			<div class="scrim scrim--gift" aria-hidden="true"></div>
+			<div class="gift-teaser__content">
+				<div class="kicker rv"><span class="kicker__num">03</span><span>Vals regal</span></div>
+				<h2 class="gift-teaser__title rv">Regala DIREKTE.</h2>
+				<div class="rv" style="--rv-delay: 120ms;">
+					<a href="vals.html" class="btn btn--accent">Regala</a>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- RECONEIXEMENTS -->
+		<section class="awards awards--v2" data-screen-label="Home — Reconeixements">
+			<div class="container">
+				<div class="kicker rv"><span class="kicker__num">04</span><span>Reconeixements</span></div>
+
+				<div class="awards__grid rv">
+					<div class="award">
+						<img src="assets/awards/michelin-plate.png" alt="Guia Michelin" class="award__logo award__logo--michelin" loading="lazy">
+						<span class="award__caption">Guia Michelin</span>
+					</div>
+					<div class="award">
+						<img src="assets/awards/repsol-plate.svg" alt="1 Sol Guía Repsol" class="award__logo award__logo--repsol" loading="lazy">
+						<span class="award__caption">1 Sol Guía Repsol</span>
+					</div>
+				</div>
+
+				<ul class="chips rv" aria-label="Reconeixements">
+					<li class="chip">Cuiner de l'any <span>2018</span></li>
+					<li class="chip">T de Oro <span>Revista Tapas · Forbes '25</span></li>
+					<li class="chip">Macarfi Top 50 <span>2026</span></li>
+					<li class="chip">OAD <span>2026</span></li>
+					<li class="chip">Millor iniciativa en restauració <span>Q Fem · La Vanguardia '25</span></li>
+					<li class="chip">Cargol Slow Food <span>Barcelona '25</span></li>
+					<li class="chip">10 World's Coolest Places <span>Forbes '20</span></li>
+					<li class="chip">Asian Culinary Awards <span>2019</span></li>
 				</ul>
 
 				<div class="press-strip rv" aria-label="El que diu la premsa">
@@ -238,45 +319,6 @@
 			</div>
 		</section>
 
-		<!-- RESERVES -->
-		<section class="reserves-block" id="reserves" data-screen-label="Home — Reserves">
-			<img src="assets/logo/k-seal-bone.png" alt="" class="reserves-block__seal" aria-hidden="true">
-			<div class="container container--narrow">
-				<div class="kicker rv"><span class="kicker__num">04</span><span>Reserves</span></div>
-
-				<!-- TODO: substituir per l'iframe de TheFork quan Arnau el faciliti -->
-				<div class="reserves__iframe-placeholder rv" aria-label="Motor de reserves">
-					<div class="reserves__iframe-inner">
-						<span class="reserves__iframe-label">TheFork</span>
-						<span class="reserves__iframe-note">Aquí s'integrarà l'iframe del sistema de reserves</span>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- DESCOBRIR -->
-		<section class="discover">
-			<div class="container">
-				<a href="about.html" class="ink-link rv">
-					<span class="ink-link__label">Descobrir Direkte</span>
-					<span class="ink-link__arrow" aria-hidden="true">→</span>
-				</a>
-			</div>
-		</section>
-
-		<!-- REGALA DIREKTE — teaser -->
-		<section class="gift-teaser" data-screen-label="Home — Regala">
-			<div class="gift-teaser__media img-gift-teaser" role="img" aria-label="Detall gastronòmic"></div>
-			<div class="scrim scrim--gift" aria-hidden="true"></div>
-			<div class="gift-teaser__content">
-				<div class="kicker rv"><span class="kicker__num">05</span><span>Vals regal</span></div>
-				<h2 class="gift-teaser__title rv">Regala Direkte.</h2>
-				<div class="rv" style="--rv-delay: 120ms;">
-					<a href="vals.html" class="btn btn--accent">Regala</a>
-				</div>
-			</div>
-		</section>
-
 	</main>
 
 	<!-- FOOTER -->
@@ -284,21 +326,25 @@
 		<div class="container">
 			<div class="site-footer__grid">
 				<div class="site-footer__brand">
-					<img src="assets/logo/wordmark.png" alt="Direkte" class="site-footer__wordmark" loading="lazy">
-					<p class="site-footer__tagline">Cuina directa.<br>Producte. Moment.</p>
+					<img src="assets/logo/wordmark-clean.png" alt="Direkte" class="site-footer__wordmark" loading="lazy">
+					<div class="site-footer__awards" aria-label="Guia Michelin i Sol Repsol">
+						<img src="assets/awards/michelin-plate.png" alt="Guia Michelin" loading="lazy">
+						<img src="assets/awards/repsol-plate.svg" alt="1 Sol Guía Repsol" loading="lazy">
+					</div>
 				</div>
 
 				<div class="site-footer__col">
 					<h4 class="site-footer__heading">Contacte</h4>
 					<ul class="site-footer__list">
 						<li>Carrer de París, 200</li>
-						<li>08036 Barcelona</li>
+						<li>08008 Barcelona</li>
+						<li><a href="tel:+34934508789">934 50 87 89</a></li>
 						<li><a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></li>
 					</ul>
 				</div>
 
 				<div class="site-footer__col">
-					<h4 class="site-footer__heading">Horaris</h4>
+					<h4 class="site-footer__heading">Horari</h4>
 					<ul class="site-footer__list site-footer__hours">
 						<li><span>Dt – Dv</span><span>19:30 · 21:45</span></li>
 						<li><span>Ds</span><span>13:00 · 15:15</span></li>
@@ -311,29 +357,24 @@
 					<ul class="site-footer__list">
 						<li><a href="about.html">About</a></li>
 						<li><a href="#reserves">Reserves</a></li>
-						<li><a href="vals.html">Regala Direkte</a></li>
+						<li><a href="vals.html">Regala DIREKTE</a></li>
 					</ul>
 				</div>
 
 				<div class="site-footer__col">
 					<h4 class="site-footer__heading">Segueix-nos</h4>
 					<ul class="site-footer__list">
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">X</a></li>
-						<li><a href="#">LinkedIn</a></li>
+						<li><a href="https://www.instagram.com/direkte_restaurant/" target="_blank" rel="noopener">Instagram</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="site-footer__bottom">
 				<p class="site-footer__legal">© 2026 Direkte · Tots els drets reservats</p>
-				<span class="site-footer__goat-link" title="Carrer de les Cabres, 13 — on tot va començar">
-					<img src="assets/logo/goat-alpha.png" alt="" class="site-footer__goat" aria-hidden="true">
-				</span>
 				<ul class="site-footer__legal-links">
-					<li><a href="#">Avís legal</a></li>
-					<li><a href="#">Privacitat</a></li>
-					<li><a href="#">Cookies</a></li>
+					<li><a href="avis-legal.html">Avís legal</a></li>
+					<li><a href="privacitat.html">Privacitat</a></li>
+					<li><a href="cookies.html">Cookies</a></li>
 				</ul>
 			</div>
 		</div>

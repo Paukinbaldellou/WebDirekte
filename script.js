@@ -73,23 +73,77 @@
 	}
 
 	/* ------------------------------------------------------------------
-	   4. Vals — maridatge aplicat als preus
+	   4. Vals — maridatge per menú aplicat al preu de cada val
 	   ------------------------------------------------------------------ */
-	var pairing = document.getElementById('pairing');
-	var prices = document.querySelectorAll('.val-item__price-value[data-base]');
+	document.querySelectorAll('.val-pairing__input').forEach(function (input) {
+		input.addEventListener('change', function () {
+			var item = input.closest('.val-item');
+			var el = item && item.querySelector('.val-item__price-value[data-base]');
+			if (!el) return;
+			var extra = input.checked ? parseInt(input.getAttribute('data-extra'), 10) : 0;
+			el.classList.add('is-flipping');
+			setTimeout(function () {
+				var base = parseInt(el.getAttribute('data-base'), 10);
+				el.textContent = (base + extra) + ' €';
+				el.classList.remove('is-flipping');
+			}, 200);
+		});
+	});
+})();
 
-	if (pairing && prices.length) {
-		pairing.addEventListener('change', function () {
-			var extra = pairing.checked ? 45 : 0;
 
-			prices.forEach(function (el) {
-				el.classList.add('is-flipping');
-				setTimeout(function () {
-					var base = parseInt(el.getAttribute('data-base'), 10);
-					el.textContent = (base + extra) + ' €';
-					el.classList.remove('is-flipping');
-				}, 200);
-			});
+/* ==========================================================================
+   DIREKTE — v2 · Cronologia viva: la línia s'omple i les fites s'encenen
+   ========================================================================== */
+
+(function () {
+	'use strict';
+
+	var timeline = document.querySelector('.ctimeline--live');
+	if (!timeline) return;
+
+	var progress = timeline.querySelector('.ctimeline__progress');
+	var items = Array.prototype.slice.call(timeline.querySelectorAll('.ctl'));
+	if (!progress || !items.length) return;
+
+	var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	if (reduced) {
+		items.forEach(function (el) { el.classList.add('is-on'); });
+		return;
+	}
+
+	var ticking = false;
+
+	function update() {
+		ticking = false;
+
+		var rect = timeline.getBoundingClientRect();
+		var anchor = window.innerHeight * 0.55;
+
+		// Alçada útil de la línia (mateixos marges que .ctimeline__line)
+		var top = 12;
+		var bottom = 40;
+		if (window.innerWidth >= 900) { top = 0; bottom = 0; }
+		var usable = Math.max(rect.height - top - bottom, 1);
+
+		var filled = anchor - rect.top - top;
+		filled = Math.max(0, Math.min(filled, usable));
+		progress.style.height = filled + 'px';
+
+		items.forEach(function (el) {
+			var marker = el.querySelector('.ctl__marker');
+			var m = (marker || el).getBoundingClientRect();
+			el.classList.toggle('is-on', m.top < anchor + 40);
 		});
 	}
+
+	function onScroll() {
+		if (ticking) return;
+		ticking = true;
+		window.requestAnimationFrame(update);
+	}
+
+	window.addEventListener('scroll', onScroll, { passive: true });
+	window.addEventListener('resize', onScroll);
+	update();
 })();

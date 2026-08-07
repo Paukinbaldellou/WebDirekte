@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="theme-color" content="#0B0B0B">
+	<link rel="icon" type="image/png" href="assets/logo/k-seal.png">
+	<title>DIREKTE — Enllaços</title>
+	<meta name="description" content="Direkte · Barra de cuina estacional · Carrer de París, 200, Barcelona.">
+	<meta name="robots" content="noindex">
+	<meta property="og:title" content="DIREKTE">
+	<meta property="og:description" content="Barra de cuina estacional · Carrer de París, 200, Barcelona.">
+	<meta property="og:image" content="https://direkte.cat/assets/img/hero-home.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+	<style>
+		:root {
+			--bg: #0B0B0B; --text: #F5F5F5; --muted: #9C9C9C; --subtle: #646464;
+			--border: #2A2A2A; --accent: #E8562D;
+			--mono: 'Special Elite', 'Courier New', monospace;
+		}
+		*, *::before, *::after { box-sizing: border-box; }
+		html { -webkit-font-smoothing: antialiased; }
+		body {
+			margin: 0; min-height: 100dvh;
+			background: var(--bg); color: var(--text);
+			font-family: var(--mono); line-height: 1.5;
+			display: flex; flex-direction: column; align-items: center;
+			padding: max(28px, env(safe-area-inset-top)) 22px max(28px, env(safe-area-inset-bottom));
+		}
+		body::after {
+			content: ''; position: fixed; inset: 0; z-index: 9; pointer-events: none;
+			opacity: 0.05; mix-blend-mode: screen; background-size: 240px 240px;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+		}
+		.wrap { width: 100%; max-width: 420px; margin: auto 0; display: flex; flex-direction: column; }
+		a { color: inherit; text-decoration: none; }
+
+		.langs { display: flex; justify-content: center; gap: 14px; margin-bottom: 40px; font-size: 11px; letter-spacing: 0.1em; }
+		.langs a { color: var(--subtle); padding: 4px 2px; }
+		.langs a.is-on { color: var(--accent); border-bottom: 1px solid var(--accent); }
+
+		.brand { text-align: center; margin-bottom: 40px; }
+		.brand__goat { width: 76px; height: auto; margin: 0 auto 22px; display: block; opacity: 0.9; }
+		.brand__mark { width: 190px; height: auto; margin: 0 auto; display: block; }
+		.brand__tag { margin: 20px 0 0; font-size: 15px; letter-spacing: 0.01em; }
+		.brand__meta { margin: 10px 0 0; font-size: 12px; color: var(--muted); }
+		.brand__hours { margin: 4px 0 0; font-size: 11px; color: var(--subtle); }
+
+		.links { display: flex; flex-direction: column; gap: 10px; }
+		.row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+		.lnk {
+			display: flex; align-items: center; justify-content: center; text-align: center;
+			min-height: 56px; padding: 14px 16px;
+			border: 1px solid rgba(245,245,245,0.28); color: var(--text);
+			font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase;
+			transition: background-color 220ms ease, border-color 220ms ease, color 220ms ease;
+		}
+		.lnk:active { background: rgba(245,245,245,0.08); }
+		.lnk--primary { background: var(--accent); border-color: var(--accent); color: var(--bg); min-height: 64px; font-size: 14px; }
+		.lnk--primary:active { background: #C8431F; border-color: #C8431F; }
+		@media (hover: hover) {
+			.lnk:hover { border-color: var(--text); background: rgba(245,245,245,0.06); }
+			.lnk--primary:hover { background: var(--text); border-color: var(--text); color: var(--bg); }
+		}
+
+		.foot { margin-top: 40px; text-align: center; font-size: 12px; color: var(--muted); display: flex; flex-direction: column; gap: 8px; }
+		.foot a { border-bottom: 1px solid var(--border); padding-bottom: 2px; }
+		.foot__note { font-size: 11px; color: var(--subtle); }
+	</style>
+</head>
+<body>
+
+<template id="__bundler_thumbnail">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+		<rect width="100" height="100" fill="#0B0B0B"/>
+		<circle cx="50" cy="50" r="27" fill="none" stroke="#E8562D" stroke-width="2"/>
+		<text x="50" y="50" fill="#F5F5F5" font-family="Courier New, monospace" font-size="30" font-weight="700" text-anchor="middle" dominant-baseline="central">K</text>
+	</svg>
+</template>
+
+
+	<div class="wrap">
+
+		<nav class="langs" aria-label="Idioma"><a href="enllacos.html" class="is-on">CA</a><a href="es/enllacos.html">ES</a><a href="en/enllacos.html">EN</a><a href="fr/enllacos.html">FR</a></nav>
+
+		<header class="brand">
+			<img src="assets/logo/goat-alpha.png" alt="" class="brand__goat" aria-hidden="true">
+			<h1 style="margin:0;"><img src="assets/logo/wordmark-clean.png" alt="DIREKTE" class="brand__mark"></h1>
+			<p class="brand__tag">Barra de cuina estacional</p>
+			<p class="brand__meta">Carrer de París, 200 · Barcelona</p>
+			<p class="brand__hours">dimarts a divendres, sopar · dissabte, dinar</p>
+		</header>
+
+		<nav class="links" aria-label="DIREKTE — Enllaços">
+			<a href="reserva.html" class="lnk lnk--primary">Reserva una taula</a>
+			<div class="row">
+				<a href="index.html#menus" class="lnk">Menús i preus</a>
+				<a href="https://share.google/BHhJw73ZDPwbo8aN2" target="_blank" rel="noopener" class="lnk">Com arribar</a>
+			</div>
+			<a href="vals.html" class="lnk">Regala DIREKTE</a>
+			<div class="row">
+				<a href="https://www.instagram.com/direkte_restaurant/" target="_blank" rel="noopener" class="lnk">Instagram</a>
+				<a href="index.html" class="lnk">Web</a>
+			</div>
+		</nav>
+
+		<footer class="foot">
+			<p style="margin:0;"><a href="tel:+34934508789">934 50 87 89</a> · <a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
+			<p class="foot__note" style="margin:0;">Grups de més de 4 persones</p>
+		</footer>
+
+	</div>
+
+</body>
+</html>

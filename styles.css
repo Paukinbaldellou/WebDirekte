@@ -312,8 +312,8 @@ a:hover [role="img"].media-zoom {
 	font-size: var(--fs-sm);
 	font-weight: var(--fw-medium);
 	line-height: 1;
-	letter-spacing: var(--ls-wider);
-	text-transform: uppercase;
+	letter-spacing: var(--ls-wide);
+	text-transform: none;
 	border: 1px solid transparent;
 	border-radius: 0;
 	cursor: pointer;
@@ -433,10 +433,9 @@ a:hover [role="img"].media-zoom {
 
 .site-nav__link {
 	position: relative;
-	font-size: var(--fs-xs);
+	font-size: var(--fs-sm);
 	font-weight: var(--fw-medium);
-	text-transform: uppercase;
-	letter-spacing: var(--ls-wider);
+	letter-spacing: var(--ls-wide);
 	color: var(--color-text);
 	padding: var(--space-2) 0;
 }
@@ -592,7 +591,7 @@ a:hover [role="img"].media-zoom {
 
 .hero__tagline {
 	margin-top: var(--space-5);
-	font-size: var(--fs-subtitle);
+	font-size: var(--fs-lg);
 	line-height: 1;
 	letter-spacing: var(--ls-tight);
 	color: var(--color-text);
@@ -628,12 +627,15 @@ a:hover [role="img"].media-zoom {
 	margin-top: var(--space-7);
 }
 
-/* Columna dreta: segell + scroll */
+/* Columna dreta: segell a l'alçada dels botons */
 .hero__aside {
 	display: none;
 	flex-direction: column;
 	align-items: flex-end;
+	justify-content: flex-end;
 	gap: var(--space-8);
+	align-self: end;
+	padding-bottom: var(--space-2);
 	animation: heroFadeUp 1.3s 0.25s var(--ease-out) both;
 }
 
@@ -642,7 +644,7 @@ a:hover [role="img"].media-zoom {
 }
 
 .hero__seal {
-	width: 84px;
+	width: 96px;
 	height: auto;
 	opacity: 0.85;
 	transform: rotate(-8deg);
@@ -699,11 +701,14 @@ a:hover [role="img"].media-zoom {
 	justify-content: center;
 	column-gap: var(--space-6);
 	row-gap: var(--space-2);
-	font-size: var(--fs-xs);
-	text-transform: uppercase;
-	letter-spacing: var(--ls-widest);
+	font-size: var(--fs-sm);
+	letter-spacing: var(--ls-wide);
 	color: var(--color-text-muted);
+	text-align: center;
+	padding-inline: var(--container-padding);
 }
+
+.data-strip__item { white-space: normal !important; max-width: 72ch; }
 
 .data-strip__item {
 	display: inline-flex;
@@ -1247,8 +1252,8 @@ a:hover [role="img"].media-zoom {
 	aspect-ratio: 4 / 3;
 }
 
-/* Ritme: alterna alçades per trencar la línia */
-.gallery-strip__item:nth-child(odd) { margin-top: var(--space-5); }
+/* Ritme uniforme: totes les imatges a la mateixa alçada */
+.gallery-strip__track { align-items: center; }
 
 @keyframes galleryScroll {
 	from { transform: translateX(0); }
@@ -1261,7 +1266,6 @@ a:hover [role="img"].media-zoom {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	.gallery-strip__item:nth-child(odd) { margin-top: 0; }
 }
 
 /* ==========================================================================
@@ -1962,14 +1966,14 @@ a:hover [role="img"].media-zoom {
    ========================================================================== */
 
 @media (max-width: 860px) {
-	.site-nav__list, .site-nav__cta { display: none; }
+	.site-nav__list, .site-nav__cta, .lang-switch { display: none; }
 	.site-nav__toggle { display: flex; }
 
 	.hero { padding-bottom: var(--space-5); }
 
 	.hero__wordmark-img { width: min(48vw, 200px); }
 
-	.hero__tagline { margin-top: var(--space-4); font-size: var(--fs-xl); }
+	.hero__tagline { margin-top: var(--space-4); font-size: var(--fs-base); }
 
 	.hero__address {
 		flex-direction: row;
@@ -2447,4 +2451,650 @@ a:hover [role="img"].media-zoom {
 	.ctl--l .ctl__text { margin-left: auto; }
 	.ctl--l .ctl__media { margin-left: auto; }
 	.ctl--r .ctl__media { margin-right: auto; }
+}
+
+/* ==========================================================================
+   25. RONDA 3 — cabra a la capçalera, iframe TheFork, contacte, extres,
+       maridatge per menú, firma del footer
+   ========================================================================== */
+
+.site-header__goat {
+	height: 44px;
+	width: auto;
+	opacity: 0.9;
+	transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.site-header__logo:hover .site-header__goat { opacity: 1; transform: rotate(-4deg); }
+
+.reserves__iframe {
+	display: block;
+	width: 100%;
+	min-height: 800px;
+	border: none;
+	margin-top: var(--space-7);
+	background-color: transparent;
+	/* Inverteix el widget de TheFork perquè s'integri amb el fons negre */
+	filter: invert(1) hue-rotate(180deg);
+}
+
+.contact-block {
+	padding: var(--space-14) 0;
+	border-top: 1px solid var(--color-border-soft);
+}
+
+.contact-block__text {
+	font-size: var(--fs-md);
+	color: var(--color-text-muted);
+	line-height: var(--lh-relaxed);
+	max-width: 46ch;
+	margin: 0 0 var(--space-7);
+}
+
+.contact-block__links {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: var(--space-9);
+	row-gap: var(--space-5);
+}
+
+.contact-block__link {
+	font-size: var(--fs-subtitle);
+	letter-spacing: var(--ls-tight);
+	color: var(--color-text);
+	border-bottom: 1px solid var(--color-border);
+	padding-bottom: 4px;
+}
+
+.contact-block__link:hover { color: var(--color-accent); border-color: var(--color-accent); }
+
+.site-footer__awards {
+	display: flex;
+	align-items: center;
+	gap: var(--space-5);
+	margin-top: var(--space-5);
+}
+
+.site-footer__awards img { height: 44px; width: auto; opacity: 0.8; }
+
+.family-group__who { display: block; }
+
+.family-group__place {
+	display: block;
+	font-size: var(--fs-xs);
+	color: var(--color-text-subtle);
+	letter-spacing: var(--ls-wide);
+	margin-top: 3px;
+}
+
+.val-pairing {
+	display: flex;
+	align-items: center;
+	gap: var(--space-4);
+	margin: 0 0 var(--space-6);
+	cursor: pointer;
+	user-select: none;
+	font-size: var(--fs-sm);
+	letter-spacing: var(--ls-wide);
+	color: var(--color-text-muted);
+}
+
+.val-pairing__input { position: absolute; opacity: 0; pointer-events: none; }
+
+.val-pairing__box {
+	flex-shrink: 0;
+	width: 22px;
+	height: 22px;
+	border: 1.5px solid var(--color-text-muted);
+	position: relative;
+	transition: border-color var(--transition-base), background-color var(--transition-base);
+}
+
+.val-pairing__box::after {
+	content: 'K';
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-bold);
+	color: var(--color-bg);
+	transform: scale(0) rotate(-12deg);
+	transition: transform 0.35s var(--ease-out);
+}
+
+.val-pairing__input:checked + .val-pairing__box { background-color: var(--color-accent); border-color: var(--color-accent); }
+.val-pairing__input:checked + .val-pairing__box::after { transform: scale(1) rotate(-8deg); }
+.val-pairing__input:focus-visible + .val-pairing__box { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+
+.val-pairing__price { color: var(--color-accent); white-space: nowrap; }
+
+.extras {
+	max-width: var(--container-narrow);
+	margin: var(--space-12) auto 0;
+}
+
+.extras__title {
+	font-size: var(--fs-subtitle);
+	letter-spacing: var(--ls-tight);
+	margin-bottom: var(--space-7);
+}
+
+.extras__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--color-border); }
+
+.extra {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: var(--space-3) var(--space-6);
+	padding: var(--space-5) var(--space-2);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.extra__name { flex: 1 1 auto; font-size: var(--fs-lg); letter-spacing: var(--ls-tight); }
+.extra__price { font-size: var(--fs-lg); color: var(--color-accent); white-space: nowrap; }
+
+.extra__cta {
+	font-size: var(--fs-xs);
+	letter-spacing: var(--ls-wide);
+	color: var(--color-text-muted);
+	border-bottom: 1px solid var(--color-border);
+	padding-bottom: 2px;
+}
+
+.extra__cta:hover { color: var(--color-accent); border-color: var(--color-accent); }
+
+/* Selector d'idioma */
+.lang-switch {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3);
+	font-size: var(--fs-xs);
+	letter-spacing: var(--ls-wide);
+	text-shadow: 0 1px 8px rgba(11, 11, 11, 0.7);
+}
+
+.lang-switch a { color: var(--color-text-muted); padding: var(--space-2) 2px; }
+.lang-switch a:hover { color: var(--color-text); }
+.lang-switch a.is-active { color: var(--color-accent); border-bottom: 1px solid var(--color-accent); }
+
+.mobile-menu__langs a { color: var(--color-text); }
+.mobile-menu__langs a.is-active { color: var(--color-accent); }
+
+/* Mapa de contacte */
+.contact-map { margin-top: var(--space-9); }
+
+.contact-map__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--space-3) var(--space-6);
+	padding-bottom: var(--space-4);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.contact-map__address {
+	margin: 0;
+	font-size: var(--fs-sm);
+	letter-spacing: var(--ls-wide);
+	color: var(--color-text);
+}
+
+.contact-map__link {
+	font-size: var(--fs-xs);
+	letter-spacing: var(--ls-wide);
+	color: var(--color-text-muted);
+	border-bottom: 1px solid var(--color-border);
+	padding-bottom: 2px;
+	white-space: nowrap;
+}
+
+.contact-map__link:hover { color: var(--color-accent); border-color: var(--color-accent); }
+
+.contact-map__frame {
+	display: block;
+	width: 100%;
+	height: 360px;
+	border: none;
+	margin-top: var(--space-5);
+	/* El mapa de Google, en fosc, integrat amb la web */
+	filter: invert(0.92) hue-rotate(185deg) saturate(0.55) contrast(0.92);
+}
+
+/* Pàgines legals */
+.legal-hero { padding: var(--space-20) 0 var(--space-8); }
+
+.legal-hero__title {
+	font-size: var(--fs-title);
+	letter-spacing: var(--ls-tight);
+}
+
+.legal-hero__updated {
+	margin-top: var(--space-5);
+	font-size: var(--fs-xs);
+	letter-spacing: var(--ls-wide);
+	color: var(--color-text-subtle);
+}
+
+.legal-body { padding: 0 0 var(--space-16); }
+
+.legal-body h2 {
+	font-size: var(--fs-lg);
+	letter-spacing: var(--ls-tight);
+	margin: var(--space-9) 0 var(--space-4);
+}
+
+.legal-body p,
+.legal-body li {
+	font-size: var(--fs-sm);
+	color: var(--color-text-muted);
+	line-height: var(--lh-relaxed);
+}
+
+.legal-body ul { padding-left: 20px; margin: 0 0 var(--space-4); }
+.legal-body li { margin-bottom: var(--space-2); }
+.legal-body strong { color: var(--color-text); font-weight: var(--fw-medium); }
+.legal-body a { color: var(--color-text); border-bottom: 1px solid var(--color-border); }
+.legal-body a:hover { color: var(--color-accent); border-color: var(--color-accent); }
+
+.legal-pending {
+	border: 1px dashed var(--color-border);
+	padding: var(--space-4) var(--space-5);
+	font-size: var(--fs-xs);
+	color: var(--color-text-subtle);
+	margin-top: var(--space-9);
+	line-height: var(--lh-relaxed);
+}
+
+
+/* ==========================================================================
+   25. HOME CONDENSADA + CRONOLOGIA VIVA
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   0. CAPÇALERA — logo · navegació centrada · idioma + reserves
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 861px) {
+	.site-header__inner {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+		align-items: center;
+	}
+
+	.site-header__logo { justify-self: start; }
+
+	.site-nav {
+		display: contents;
+	}
+
+	.site-nav__list {
+		grid-column: 2;
+		justify-self: center;
+		gap: var(--space-7);
+	}
+
+	.site-nav__end {
+		grid-column: 3;
+		justify-self: end;
+		display: flex;
+		align-items: center;
+		gap: var(--space-5);
+	}
+}
+
+/* Desplegable d'idioma */
+.lang-menu { position: relative; }
+
+.lang-menu__current {
+	list-style: none;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-2);
+	padding: var(--space-2) var(--space-3);
+	font-size: var(--fs-xs);
+	letter-spacing: var(--ls-wide);
+	color: var(--color-text);
+	border: 1px solid rgba(245, 245, 245, 0.22);
+	transition: border-color var(--transition-base), color var(--transition-base);
+}
+
+.lang-menu__current::-webkit-details-marker { display: none; }
+
+.lang-menu__current::after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 3.5px solid transparent;
+	border-right: 3.5px solid transparent;
+	border-top: 4px solid var(--color-accent);
+	transition: transform var(--transition-base);
+}
+
+.lang-menu[open] .lang-menu__current::after { transform: rotate(180deg); }
+.lang-menu__current:hover { border-color: var(--color-text); }
+
+.lang-menu__list {
+	position: absolute;
+	top: calc(100% + 6px);
+	right: 0;
+	z-index: 120;
+	display: flex;
+	flex-direction: column;
+	min-width: 100%;
+	background-color: rgba(11, 11, 11, 0.96);
+	-webkit-backdrop-filter: blur(14px);
+	backdrop-filter: blur(14px);
+	border: 1px solid var(--color-border);
+}
+
+.lang-menu__list a {
+	padding: var(--space-3) var(--space-4);
+	font-size: var(--fs-xs);
+	letter-spacing: var(--ls-wide);
+	color: var(--color-text-muted);
+	white-space: nowrap;
+}
+
+.lang-menu__list a:hover { color: var(--color-text); background-color: rgba(245, 245, 245, 0.06); }
+.lang-menu__list a.is-active { color: var(--color-accent); }
+
+@media (max-width: 860px) {
+	.lang-menu { display: none; }
+}
+
+/* Preu per persona */
+.menu-line__pp {
+	display: block;
+	margin-top: 4px;
+	font-size: var(--fs-xs);
+	text-transform: uppercase;
+	letter-spacing: var(--ls-wider);
+	color: var(--color-text-muted);
+	text-align: right;
+}
+
+/* --------------------------------------------------------------------------
+   1. OFERTA — menús + horari en dues columnes, cinta de fotos enganxada
+   -------------------------------------------------------------------------- */
+
+.offer { padding: var(--space-14) 0 0; }
+
+.offer__title {
+	font-size: var(--fs-title);
+	letter-spacing: var(--ls-tight);
+	margin-bottom: var(--space-9);
+}
+
+.offer .menu-ledger { border-top: 1px solid var(--color-border); }
+
+/* Horari — una sola línia a peu del bloc de menús */
+.hours-line {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: var(--space-4) var(--space-8);
+	padding: var(--space-6) var(--space-3);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.hours-line__label {
+	flex: 0 0 auto;
+	font-size: var(--fs-2xs);
+	text-transform: uppercase;
+	letter-spacing: var(--ls-widest);
+	color: var(--color-text-subtle);
+}
+
+.hours-line__items {
+	flex: 1 1 auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-4) var(--space-9);
+	justify-content: flex-start;
+}
+
+.hours-line__item {
+	display: flex;
+	align-items: baseline;
+	gap: var(--space-3);
+}
+
+.hours-line__day {
+	font-size: var(--fs-sm);
+	letter-spacing: var(--ls-wide);
+	color: var(--color-text-muted);
+}
+
+.hours-line__time {
+	font-size: var(--fs-md);
+	color: var(--color-accent);
+	letter-spacing: var(--ls-tight);
+	white-space: nowrap;
+}
+
+.hours-line__item--closed .hours-line__time {
+	font-size: var(--fs-sm);
+	text-transform: uppercase;
+	letter-spacing: var(--ls-wider);
+	color: var(--color-text-subtle);
+}
+
+.offer__foot {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: var(--space-4);
+	padding-top: var(--space-9);
+}
+
+/* La cinta de fotos, enganxada al mateix bloc */
+.offer .gallery-strip {
+	margin-top: var(--space-10);
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+/* Regala DIREKTE — centrat */
+.gift-teaser--center { align-items: center; text-align: center; }
+.gift-teaser--center .gift-teaser__title { max-width: none; }
+.gift-teaser--center .kicker { justify-content: center; }
+.gift-teaser--center .kicker::after { display: none; }
+
+/* --------------------------------------------------------------------------
+   2. RESERVES + CONTACTE en un sol bloc
+   -------------------------------------------------------------------------- */
+
+.reserves-block--v2 { padding-top: var(--space-14); }
+
+.reserves__contact {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--space-4) var(--space-8);
+	margin-top: var(--space-8);
+	padding-top: var(--space-6);
+	border-top: 1px solid var(--color-border);
+}
+
+.reserves__contact-text {
+	margin: 0;
+	flex: 1 1 30ch;
+	font-size: var(--fs-sm);
+	color: var(--color-text-muted);
+	line-height: var(--lh-relaxed);
+}
+
+.reserves__contact-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-3) var(--space-7);
+}
+
+.reserves__contact-links .contact-block__link { font-size: var(--fs-lg); }
+
+.reserves-block--v2 .contact-map { margin-top: var(--space-8); }
+.reserves-block--v2 .contact-map__frame { height: 300px; }
+
+/* --------------------------------------------------------------------------
+   3. RECONEIXEMENTS condensats — distincions en fitxes compactes
+   -------------------------------------------------------------------------- */
+
+.awards--v2 { padding: var(--space-12) 0 var(--space-16); }
+
+.awards--v2 .awards__grid {
+	margin-bottom: var(--space-9);
+	padding-bottom: var(--space-9);
+}
+
+.chips {
+	list-style: none;
+	margin: 0 0 var(--space-10);
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-3);
+	justify-content: center;
+}
+.chip {
+	display: inline-flex;
+	align-items: baseline;
+	gap: var(--space-3);
+	padding: var(--space-3) var(--space-4);
+	border: 1px solid var(--color-border);
+	font-size: var(--fs-sm);
+	letter-spacing: var(--ls-wide);
+	color: var(--color-text);
+	transition: border-color var(--transition-base);
+}
+
+.chip:hover { border-color: var(--color-text-subtle); }
+
+.chip span {
+	font-size: var(--fs-2xs);
+	text-transform: uppercase;
+	letter-spacing: var(--ls-wider);
+	color: var(--color-text-subtle);
+	white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   4. CRONOLOGIA VIVA (about) — la línia s'omple a mesura que baixes
+   -------------------------------------------------------------------------- */
+
+.ctimeline--live { position: relative; }
+
+.ctimeline__progress {
+	position: absolute;
+	left: 31px;
+	top: 12px;
+	width: 1px;
+	height: 0;
+	background: linear-gradient(to bottom, var(--color-accent), var(--color-accent-ink));
+	z-index: 1;
+	transition: height 120ms linear;
+	pointer-events: none;
+}
+
+@media (min-width: 900px) {
+	.ctimeline__progress { left: 50%; top: 0; }
+}
+
+/* Els marcadors s'encenen en arribar-hi */
+.js .ctimeline--live .ctl__marker {
+	border-color: var(--color-border);
+	color: var(--color-text-subtle);
+	transition: border-color 0.5s var(--ease-out), color 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+}
+
+.js .ctimeline--live .ctl.is-on .ctl__marker {
+	border-color: var(--color-accent);
+	color: var(--color-accent);
+}
+
+.js .ctimeline--live .ctl--today.is-on .ctl__marker {
+	background-color: var(--color-accent);
+	color: var(--color-bg);
+}
+
+.js .ctimeline--live .ctl__body {
+	opacity: 0.42;
+	transition: opacity 0.5s var(--ease-out);
+}
+
+.js .ctimeline--live .ctl.is-on .ctl__body { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+	.ctimeline__progress { display: none; }
+	.js .ctimeline--live .ctl__body { opacity: 1; }
+	.js .ctimeline--live .ctl__marker { border-color: var(--color-accent); color: var(--color-accent); }
+}
+
+/* --------------------------------------------------------------------------
+   5. MÒBIL
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 860px) {
+	.offer { padding-top: var(--space-10); }
+
+	.offer__title { margin-bottom: var(--space-7); }
+
+	/* El preu i el "per persona" viuen a la seva pròpia fila, alineats a l'esquerra */
+	.menu-line__price { display: flex; align-items: baseline; gap: var(--space-3); }
+	.menu-line__pp { margin-top: 0; text-align: left; }
+
+	.hours-line {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: var(--space-4);
+	}
+
+	.hours-line__items {
+		flex-direction: column;
+		gap: var(--space-3);
+		width: 100%;
+	}
+
+	.hours-line__item {
+		justify-content: space-between;
+		width: 100%;
+		gap: var(--space-4);
+	}
+
+	.offer__foot { padding-top: var(--space-8); }
+	.offer__foot .btn { width: 100%; }
+
+	.offer .gallery-strip { margin-top: var(--space-8); }
+
+	.reserves__contact { gap: var(--space-4); }
+	.reserves__contact-links { flex-direction: column; gap: var(--space-3); width: 100%; }
+	.reserves__contact-links .contact-block__link {
+		font-size: var(--fs-md);
+		word-break: break-word;
+	}
+
+	.reserves-block--v2 .contact-map__frame { height: 240px; }
+	.contact-map__head { flex-direction: column; align-items: flex-start; gap: var(--space-2); }
+
+	/* Fitxes de distincions: alineades a l'esquerra, sense dents de serra */
+	.chips { justify-content: flex-start; gap: var(--space-2); margin-bottom: var(--space-8); }
+	.chip { padding: var(--space-2) var(--space-3); font-size: var(--fs-xs); }
+	.chip span { font-size: 0.625rem; }
+
+	.awards--v2 { padding: var(--space-10) 0 var(--space-12); }
+	.awards--v2 .awards__grid { margin-bottom: var(--space-7); padding-bottom: var(--space-7); }
+
+	/* Cronologia viva: la línia i el text ocupen tota l'amplada útil */
+	.ctimeline--live .ctl__body { opacity: 1; }
+	.js .ctimeline--live .ctl__body { opacity: 0.55; }
+	.js .ctimeline--live .ctl.is-on .ctl__body { opacity: 1; }
+}
+
+@media (max-width: 480px) {
+	.offer__title { font-size: var(--fs-subtitle); }
+	.chips { gap: 6px; }
 }

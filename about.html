@@ -4,31 +4,79 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="assets/logo/k-seal.png">
-	<title>About — Direkte</title>
-	<meta name="description" content="Direkte. Arnau Muñío. De la Boqueria al carrer de París. Vint anys de cuina estacional.">
+	<title>Descobreix Direkte — El chef Arnau Muñío, el camí i la família</title>
+	<meta name="description" content="De la Boqueria a l'Eixample: la història de Direkte, el chef Arnau Muñío, la família d'artesans i cellers, i l'obrador de ferments propi.">
+	<link rel="canonical" href="https://direkte.cat/about.html">
+	<link rel="alternate" hreflang="ca" href="https://direkte.cat/about.html">
+	<link rel="alternate" hreflang="es" href="https://direkte.cat/es/about.html">
+	<link rel="alternate" hreflang="en" href="https://direkte.cat/en/about.html">
+	<link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/about.html">
+	<link rel="alternate" hreflang="x-default" href="https://direkte.cat/about.html">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Direkte">
+	<meta property="og:title" content="Descobreix Direkte — El chef, el camí i la família">
+	<meta property="og:description" content="De la Boqueria a l'Eixample: 25 anys d'ofici, la família d'artesans i cellers, i l'obrador de ferments propi.">
+	<meta property="og:url" content="https://direkte.cat/about.html">
+	<meta property="og:image" content="https://direkte.cat/assets/img/about-hero.jpg">
+	<meta property="og:locale" content="ca_ES">
+	<meta name="twitter:card" content="summary_large_image">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Arnau Muñío",
+		"jobTitle": "Chef i fundador",
+		"description": "Chef amb 25 anys d'ofici: Comerç 24, La Alquería de elBullihotel, grup elBarri i fundador de Direkte.",
+		"url": "https://direkte.cat/about.html",
+		"image": "https://direkte.cat/assets/img/chef-portrait.jpg",
+		"worksFor": {"@type": "Restaurant", "name": "Direkte", "url": "https://direkte.cat/"},
+		"sameAs": ["https://www.instagram.com/direkte_restaurant/"]
+	}
+	</script>
 </head>
 <body>
+
+<template id="__bundler_thumbnail">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+		<rect width="100" height="100" fill="#0B0B0B"/>
+		<circle cx="50" cy="50" r="27" fill="none" stroke="#E8562D" stroke-width="2"/>
+		<text x="50" y="50" fill="#F5F5F5" font-family="Courier New, monospace" font-size="30" font-weight="700" text-anchor="middle" dominant-baseline="central">K</text>
+	</svg>
+</template>
+
 
 	<!-- HEADER -->
 	<header class="site-header" id="site-header">
 		<div class="site-header__inner">
-			<a href="index.html" class="site-header__logo" aria-label="Direkte — inici">
-				<img src="assets/logo/wordmark.png" alt="Direkte" class="site-header__wordmark">
+			<a href="index.html" class="site-header__logo" aria-label="Direkte — inici" title="Carrer de les Cabres, 13 — on tot va començar">
+				<img src="assets/logo/goat-alpha.png" alt="Direkte" class="site-header__goat">
 			</a>
 
 			<nav class="site-nav" aria-label="Navegació principal">
 				<ul class="site-nav__list">
 					<li><a href="index.html" class="site-nav__link">Inici</a></li>
 					<li><a href="about.html" class="site-nav__link is-active">About</a></li>
-					<li><a href="vals.html" class="site-nav__link">Regala Direkte</a></li>
+					<li><a href="vals.html" class="site-nav__link">Regala</a></li>
 				</ul>
-				<a href="index.html#reserves" class="btn btn--accent site-nav__cta">Reserves</a>
+				<div class="site-nav__end">
+					<details class="lang-menu">
+						<summary class="lang-menu__current" aria-label="CA">CA</summary>
+						<div class="lang-menu__list">
+						<a href="about.html" class="is-active" hreflang="ca">CA</a>
+						<a href="es/about.html" hreflang="es">ES</a>
+						<a href="en/about.html" hreflang="en">EN</a>
+						<a href="fr/about.html" hreflang="fr">FR</a>
+						</div>
+					</details>
+					<a href="index.html#reserves" class="btn btn--accent site-nav__cta">Reserves</a>
+				</div>
 			</nav>
 
 			<button class="site-nav__toggle" aria-label="Obrir menú" aria-expanded="false" aria-controls="mobile-menu">
@@ -44,14 +92,15 @@
 			<ul class="mobile-menu__list">
 				<li><a href="index.html" class="mobile-menu__link"><span class="mobile-menu__num">01</span><span>Inici</span></a></li>
 				<li><a href="about.html" class="mobile-menu__link is-active"><span class="mobile-menu__num">02</span><span>About</span></a></li>
-				<li><a href="vals.html" class="mobile-menu__link"><span class="mobile-menu__num">03</span><span>Regala Direkte</span></a></li>
+				<li><a href="vals.html" class="mobile-menu__link"><span class="mobile-menu__num">03</span><span>Regala DIREKTE</span></a></li>
 				<li><a href="index.html#reserves" class="mobile-menu__link"><span class="mobile-menu__num">04</span><span>Reserves</span></a></li>
 			</ul>
 		</nav>
 		<div class="mobile-menu__meta">
 			<p>Carrer de París, 200 · Eixample · Barcelona</p>
-			<p>dimarts a divendres, sopars · dissabtes, migdia</p>
-			<p><a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
+			<p>dimarts a divendres, sopar · dissabte, dinar</p>
+			<p><a href="tel:+34934508789">934 50 87 89</a> · <a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
+			<p class="mobile-menu__langs"><a href="about.html" class="is-active">CA</a> · <a href="es/about.html">ES</a> · <a href="en/about.html">EN</a> · <a href="fr/about.html">FR</a></p>
 		</div>
 	</div>
 
@@ -63,59 +112,14 @@
 			<div class="scrim scrim--page" aria-hidden="true"></div>
 			<div class="page-hero__content">
 				<div class="kicker"><span class="kicker__num">—</span><span>About</span></div>
-				<h1 class="page-hero__title">Direkte.</h1>
-			</div>
-		</section>
-
-		<!-- EL CHEF -->
-		<section class="chef" data-screen-label="About — El chef">
-			<div class="container">
-				<div class="chef__grid">
-					<div class="chef__media-wrap media-frame rv">
-						<div class="chef__media img-chef-portrait media-zoom" role="img" aria-label="Servei a la barra"></div>
-					</div>
-
-					<div class="chef__text rv" style="--rv-delay: 140ms;">
-						<div class="kicker"><span class="kicker__num">01</span><span>El chef</span></div>
-						<h2 class="chef__title">Arnau Muñío</h2>
-
-						<div class="chef__prose">
-							<p>Onze anys a <strong>Comerç 24</strong> — on va arribar l'estrella Michelin — i un pas pel grup elBarri d'Albert Adrià van formar la cuina d'Arnau Muñío abans de fer-se pel seu compte.</p>
-							<p>El 2018 obre <strong>Direkte Boqueria</strong>: catorze metres quadrats, ell i dos cuiners, i una idea clara — cuina estacional, directa i feta a la vista. Pel camí, cuiner català de l'any.</p>
-							<p>El 2025 Direkte es trasllada al <strong>carrer de París</strong>, a l'Eixample. Mateix entusiasme, més espai: producte, moment, obrador de ferments propi i un celler triat un a un.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- GALERIA — cinta en loop -->
-		<section class="gallery-strip" aria-label="Galeria d'imatges del servei">
-			<div class="gallery-strip__track">
-				<!-- Primera tanda -->
-				<div class="gallery-strip__item img-gallery-1" role="img" aria-label="Postre"></div>
-				<div class="gallery-strip__item img-gallery-2" role="img" aria-label="Elaboració"></div>
-				<div class="gallery-strip__item img-gallery-3" role="img" aria-label="Plat"></div>
-				<div class="gallery-strip__item img-gallery-4" role="img" aria-label="Elaboració"></div>
-				<div class="gallery-strip__item img-gallery-5" role="img" aria-label="Plat"></div>
-				<div class="gallery-strip__item img-gallery-6" role="img" aria-label="Servei"></div>
-				<div class="gallery-strip__item img-gallery-7" role="img" aria-label="Torn"></div>
-
-				<!-- Segona tanda duplicada per al loop continu -->
-				<div class="gallery-strip__item img-gallery-1" role="img" aria-hidden="true"></div>
-				<div class="gallery-strip__item img-gallery-2" role="img" aria-hidden="true"></div>
-				<div class="gallery-strip__item img-gallery-3" role="img" aria-hidden="true"></div>
-				<div class="gallery-strip__item img-gallery-4" role="img" aria-hidden="true"></div>
-				<div class="gallery-strip__item img-gallery-5" role="img" aria-hidden="true"></div>
-				<div class="gallery-strip__item img-gallery-6" role="img" aria-hidden="true"></div>
-				<div class="gallery-strip__item img-gallery-7" role="img" aria-hidden="true"></div>
+				<h1 class="page-hero__title">Descobreix Direkte.</h1>
 			</div>
 		</section>
 
 		<!-- TIMELINE INTRO -->
 		<section class="timeline-intro" data-screen-label="About — El camí">
 			<div class="container">
-				<div class="kicker rv"><span class="kicker__num">02</span><span>El camí</span></div>
+				<div class="kicker rv"><span class="kicker__num">01</span><span>El camí</span></div>
 				<h2 class="timeline-intro__title rv">De la Boqueria a l'Eixample</h2>
 			</div>
 		</section>
@@ -123,31 +127,48 @@
 		<!-- TIMELINE — línia cronològica unificada -->
 		<section class="timeline" data-screen-label="About — El camí (línia)">
 			<div class="container">
-				<div class="ctimeline">
+				<div class="ctimeline ctimeline--live">
 					<div class="ctimeline__line" aria-hidden="true"></div>
+					<div class="ctimeline__progress" aria-hidden="true"></div>
 
 					<div class="ctl ctl--l rv">
 						<div class="ctl__marker"><span>2018</span></div>
 						<div class="ctl__body">
-							<h3 class="ctl__heading">Direkte Boqueria</h3>
-							<p class="ctl__text">3 d'abril. Obrim al carrer de les Cabres, 13 — catorze metres quadrats, l'Arnau i dos cuiners. Cuiner català de l'any. Neixen .direktevins i el concepte de cuina estacional.</p>
+							<h3 class="ctl__heading">Comença l'aventura</h3>
+							<p class="ctl__text">3 d'abril. Obrim al carrer de les Cabres, 13 — catorze metres quadrats i cuina estacional feta a la vista. Comencem només l'Arnau i un cuiner.</p>
 							<div class="ctl__media media-frame"><div class="ctl__media-img img-timeline-2018 media-zoom" role="img" aria-label="Direkte Boqueria, 2018"></div></div>
+						</div>
+					</div>
+
+					<div class="ctl ctl--r rv">
+						<div class="ctl__marker"><span>2018</span></div>
+						<div class="ctl__body">
+							<h3 class="ctl__heading">Neix .direktevins</h3>
+							<p class="ctl__text">El projecte .direktevins arrenca de la mà d'Antonio Lopo, junt amb Vinya Ferrer.</p>
+						</div>
+					</div>
+
+					<div class="ctl ctl--l rv">
+						<div class="ctl__marker"><span>2018</span></div>
+						<div class="ctl__body">
+							<h3 class="ctl__heading">Cuiner de l'any</h3>
+							<p class="ctl__text">El primer reconeixement. Arriben també la recomanació de la Guia Repsol, l'entrada al top 50 de Macarfi, les millors obertures de l'any per El Periódico i els 10 millors restaurants per Time Out.</p>
 						</div>
 					</div>
 
 					<div class="ctl ctl--r rv">
 						<div class="ctl__marker"><span>2019</span></div>
 						<div class="ctl__body">
-							<h3 class="ctl__heading">El primer reconeixement</h3>
-							<p class="ctl__text">Asian Award amb el ramen d'allipebre de ratjada. Recomanació de la Guia Repsol i de la Guia Michelin — plat i forquilla.</p>
+							<h3 class="ctl__heading">Asian Culinary Awards</h3>
+							<p class="ctl__text">Guanyem el premi amb el nostre ramen d'allipebre de ratjada de la Ràpita. Entrem recomanats a la Guia Michelin.</p>
 						</div>
 					</div>
 
 					<div class="ctl ctl--l rv">
 						<div class="ctl__marker"><span>2020</span></div>
 						<div class="ctl__body">
-							<h3 class="ctl__heading">La pandèmia</h3>
-							<p class="ctl__text">En lloc de tancar, obrim terrassa i dobla l'equip. Comencem a treballar amb productes silvestres recol·lectats.</p>
+							<h3 class="ctl__heading">Pandèmia: rebel·lar-se o morir</h3>
+							<p class="ctl__text">Tanquem un mes i l'aprofitem per fer retrospectiva: reunions setmanals de creativitat amb l'equip, cursos online de cuina per a l'escola Bellart i l'Aula de la Boqueria, i comencem a anar al bosc a recol·lectar producte. Al juny obrim de nou duplicant equip i capacitat amb l'obertura de la nostra terrassa.</p>
 						</div>
 					</div>
 
@@ -162,36 +183,89 @@
 					<div class="ctl ctl--l rv">
 						<div class="ctl__marker"><span>2022</span></div>
 						<div class="ctl__body">
-							<h3 class="ctl__heading">Sol Repsol</h3>
-							<p class="ctl__text">Arriba el Sol Repsol. Comencem .direkteferments, l'obrador propi.</p>
+							<h3 class="ctl__heading">En busca del sol</h3>
+							<p class="ctl__text">Movistar ens fa el reportatge on guanyem el Sol Repsol.</p>
 						</div>
 					</div>
 
 					<div class="ctl ctl--r rv">
-						<div class="ctl__marker"><span>2024</span></div>
+						<div class="ctl__marker"><span>2023</span></div>
 						<div class="ctl__body">
-							<h3 class="ctl__heading">Un nou projecte</h3>
-							<p class="ctl__text">Comença el projecte del carrer de París.</p>
+							<h3 class="ctl__heading">Mirant més enllà</h3>
+							<p class="ctl__text">Comencem a buscar local per canviar de casa.</p>
 						</div>
 					</div>
 
 					<div class="ctl ctl--l rv">
-						<div class="ctl__marker"><span>2025</span></div>
+						<div class="ctl__marker"><span>2024</span></div>
 						<div class="ctl__body">
 							<h3 class="ctl__heading">Carrer de París, 200</h3>
-							<p class="ctl__text">5 d'abril, últim servei a la Boqueria. 17 d'abril, obrim a l'Eixample — 130 m² i cuina vista. Cargol Slow Food, Q Fem La Vanguardia i T de Oro de Tapas.</p>
+							<p class="ctl__text">Trobem el local i comencen les lentes i eternes obres.</p>
+						</div>
+					</div>
+
+					<div class="ctl ctl--r rv">
+						<div class="ctl__marker"><span>2025</span></div>
+						<div class="ctl__body">
+							<h3 class="ctl__heading">De la Boqueria a l'Eixample</h3>
+							<p class="ctl__text">El 5 d'abril, amb molta tristesa, fem l'últim servei a la Boqueria. El 17 d'abril, amb molta il·lusió, obrim DIREKTE a l'Eixample. Arriben el premi a millor iniciativa de restauració de La Vanguardia, el Cargol de Slow Food Barcelona i la T de Oro al millor restaurant de Catalunya de la revista Tapas de Forbes.</p>
 							<div class="ctl__media media-frame"><div class="ctl__media-img img-timeline-2025 media-zoom" role="img" aria-label="Nou espai al carrer de París"></div></div>
 						</div>
 					</div>
 
-					<div class="ctl ctl--today ctl--r rv">
+					<div class="ctl ctl--today ctl--l rv">
 						<div class="ctl__marker"><span>Avui</span></div>
 						<div class="ctl__body">
-							<h3 class="ctl__heading">Avui</h3>
-							<p class="ctl__text">Seguim creixent, aprenent i evolucionant amb el mateix entusiasme que el primer dia.</p>
+							<h3 class="ctl__heading">2026</h3>
+							<p class="ctl__text">Seguim aprenent i millorant per tal de ser una mica millor que ahir.</p>
 						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<!-- EL CHEF -->
+		<section class="chef" data-screen-label="About — El chef">
+			<div class="container">
+				<div class="chef__grid">
+					<div class="chef__media-wrap media-frame rv">
+						<div class="chef__media img-chef-portrait media-zoom" role="img" aria-label="El chef a la barra"></div>
+					</div>
+
+					<div class="chef__text rv" style="--rv-delay: 140ms;">
+						<div class="kicker"><span class="kicker__num">02</span><span>El chef</span></div>
+						<h2 class="chef__title">Arnau Muñío</h2>
+
+						<div class="chef__prose">
+							<p>El nostre chef, Arnau Muñío, l'avalen <strong>25 anys d'ofici</strong>. Va començar a l'escola Joviat de Manresa, on va estudiar Cuina i Serveis. Va fer pràctiques a la desapareguda <strong>Dama</strong> de Barcelona — una estrella Michelin — i va combinar estudis i feina amb el chef <strong>Ramon Martínez</strong>, actual mà dreta de José Andrés, de qui diu que va aprendre l'amor per la professió.</p>
+							<p>Tot seguit va emprendre el camí cap a Andalusia, al restaurant <strong>La Alquería</strong> de elBullihotel — dues estrelles Michelin — on va ser l'encarregat de peixos durant un any. Va tornar a Catalunya al <strong>Comerç 24</strong>, on va ser cap de cuina durant deu anys i on van guanyar l'estrella Michelin.</p>
+							<p>Va estar amb <strong>Albert Adrià</strong> com a chef extern, ajudant en tasques del taller de creativitat per a diferents restaurants del grup elBarri. Tot seguit va fer el projecte i la posada en marxa de <strong>La Barra de Carles Abellan</strong>, que li va permetre accedir al local de la Boqueria on va néixer DIREKTE.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- GALERIA — cinta en loop -->
+		<section class="gallery-strip" aria-label="Galeria d'imatges del servei">
+			<div class="gallery-strip__track">
+				<!-- Primera tanda -->
+				<div class="gallery-strip__item img-gallery-1" role="img" aria-label="Postre en bol de ceràmica negra"></div>
+				<div class="gallery-strip__item img-gallery-2" role="img" aria-label="Navalles i bolets a l'obrador"></div>
+				<div class="gallery-strip__item img-gallery-3" role="img" aria-label="El pastís de formatge amb te matcha"></div>
+				<div class="gallery-strip__item img-gallery-4" role="img" aria-label="Ratllant wasabi fresc"></div>
+				<div class="gallery-strip__item img-gallery-5" role="img" aria-label="El servei a la barra"></div>
+				<div class="gallery-strip__item img-gallery-6" role="img" aria-label="Cloïsses amb escuma marina"></div>
+				<div class="gallery-strip__item img-gallery-7" role="img" aria-label="L'obrador de pastissos"></div>
+
+				<!-- Segona tanda duplicada per al loop continu -->
+				<div class="gallery-strip__item img-gallery-1" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-2" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-3" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-4" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-5" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-6" role="img" aria-hidden="true"></div>
+				<div class="gallery-strip__item img-gallery-7" role="img" aria-hidden="true"></div>
 			</div>
 		</section>
 
@@ -200,32 +274,32 @@
 			<div class="container">
 				<div class="family__intro rv">
 					<div class="kicker"><span class="kicker__num">03</span><span>La família</span></div>
-					<h2 class="family__title">La família que ens ajuda a créixer.</h2>
-					<p class="family__lead">Artesans i cellers, fruit del diàleg i del respecte per unes disciplines que entenem com a germanes.</p>
+					<h2 class="family__title">La família que ajuda a créixer.</h2>
+					<p class="family__lead">Direkte no és fruit d'una persona, sinó de la combinació de moltes d'elles amb un talent excepcional per aquest ofici, que formen part de l'equip diari del restaurant.</p>
+					<p class="family__lead">També són part de la família Direkte altres persones que ens ajuden des de fora a fer que aquest projecte no pari de créixer. Són artesans sensibles i compromesos amb qui hem après els uns dels altres, creant vincles meravellosos.</p>
 				</div>
 
 				<div class="family__groups">
 					<div class="family-group rv">
-						<h3 class="family-group__label">Artesans</h3>
+						<h3 class="family-group__label">.direktevins</h3>
 						<ul class="family-group__list">
-							<li>Carme Balada</li>
-							<li>Carlota San Pietro</li>
-							<li>Sandra Sangfangs</li>
-							<li>Luesma &amp; Vega</li>
-							<li>Utuwa Zoshi · Tòquio</li>
+							<li><span class="family-group__who">Antonio Lopo i Sergi Figueres</span><span class="family-group__place">Thunder Wine Makers</span></li>
+							<li><span class="family-group__who">Marcel i Ramon</span><span class="family-group__place">Vinya Ferrer · Terra Alta</span></li>
+							<li><span class="family-group__who">Jordi Valls</span><span class="family-group__place">Valldosera · Garraf</span></li>
+							<li><span class="family-group__who">Agustinet Roca</span><span class="family-group__place">AnimaMundi · Penedès</span></li>
+							<li><span class="family-group__who">Carles Muray</span><span class="family-group__place">Oller del Mas · Pla de Bages</span></li>
+							<li><span class="family-group__who">Alfredo Arribas</span><span class="family-group__place">Priorat</span></li>
+							<li><span class="family-group__who">Raül Bobet</span><span class="family-group__place">Castell d'Encús · Pallars Jussà</span></li>
 						</ul>
 					</div>
 					<div class="family-group rv" style="--rv-delay: 120ms;">
-						<h3 class="family-group__label">Celler</h3>
+						<h3 class="family-group__label">.direkteartesans</h3>
 						<ul class="family-group__list">
-							<li>Thunder Wine Makers</li>
-							<li>Vinya Ferrer</li>
-							<li>Raül Bobet</li>
-							<li>Alfredo Arribas</li>
-							<li>Jordi Valls</li>
-							<li>Anima Mundi</li>
-							<li>Oller del Mas</li>
-							<li>.direktevins</li>
+							<li><span class="family-group__who">Carme Balada</span><span class="family-group__place">El Born</span></li>
+							<li><span class="family-group__who">Sandra Rubio</span><span class="family-group__place">Sants</span></li>
+							<li><span class="family-group__who">Carlota Sampietro</span><span class="family-group__place">Horta</span></li>
+							<li><span class="family-group__who">Luesma &amp; Vega</span><span class="family-group__place">Molins de Rei</span></li>
+							<li><span class="family-group__who">Utuwa Zoshi</span><span class="family-group__place">Tòquio</span></li>
 						</ul>
 					</div>
 				</div>
@@ -259,7 +333,7 @@
 			<div class="container container--narrow">
 				<div class="cta-final__actions rv">
 					<a href="index.html#reserves" class="btn btn--accent">Reserves</a>
-					<a href="vals.html" class="btn btn--ghost">Regala Direkte</a>
+					<a href="vals.html" class="btn btn--ghost">Regala DIREKTE</a>
 				</div>
 			</div>
 		</section>
@@ -271,21 +345,25 @@
 		<div class="container">
 			<div class="site-footer__grid">
 				<div class="site-footer__brand">
-					<img src="assets/logo/wordmark.png" alt="Direkte" class="site-footer__wordmark" loading="lazy">
-					<p class="site-footer__tagline">Cuina directa.<br>Producte. Moment.</p>
+					<img src="assets/logo/wordmark-clean.png" alt="Direkte" class="site-footer__wordmark" loading="lazy">
+					<div class="site-footer__awards" aria-label="Guia Michelin i Sol Repsol">
+						<img src="assets/awards/michelin-plate.png" alt="Guia Michelin" loading="lazy">
+						<img src="assets/awards/repsol-plate.svg" alt="1 Sol Guía Repsol" loading="lazy">
+					</div>
 				</div>
 
 				<div class="site-footer__col">
 					<h4 class="site-footer__heading">Contacte</h4>
 					<ul class="site-footer__list">
 						<li>Carrer de París, 200</li>
-						<li>08036 Barcelona</li>
+						<li>08008 Barcelona</li>
+						<li><a href="tel:+34934508789">934 50 87 89</a></li>
 						<li><a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></li>
 					</ul>
 				</div>
 
 				<div class="site-footer__col">
-					<h4 class="site-footer__heading">Horaris</h4>
+					<h4 class="site-footer__heading">Horari</h4>
 					<ul class="site-footer__list site-footer__hours">
 						<li><span>Dt – Dv</span><span>19:30 · 21:45</span></li>
 						<li><span>Ds</span><span>13:00 · 15:15</span></li>
@@ -298,29 +376,24 @@
 					<ul class="site-footer__list">
 						<li><a href="about.html">About</a></li>
 						<li><a href="index.html#reserves">Reserves</a></li>
-						<li><a href="vals.html">Regala Direkte</a></li>
+						<li><a href="vals.html">Regala DIREKTE</a></li>
 					</ul>
 				</div>
 
 				<div class="site-footer__col">
 					<h4 class="site-footer__heading">Segueix-nos</h4>
 					<ul class="site-footer__list">
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">X</a></li>
-						<li><a href="#">LinkedIn</a></li>
+						<li><a href="https://www.instagram.com/direkte_restaurant/" target="_blank" rel="noopener">Instagram</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="site-footer__bottom">
 				<p class="site-footer__legal">© 2026 Direkte · Tots els drets reservats</p>
-				<span class="site-footer__goat-link" title="Carrer de les Cabres, 13 — on tot va començar">
-					<img src="assets/logo/goat-alpha.png" alt="" class="site-footer__goat" aria-hidden="true">
-				</span>
 				<ul class="site-footer__legal-links">
-					<li><a href="#">Avís legal</a></li>
-					<li><a href="#">Privacitat</a></li>
-					<li><a href="#">Cookies</a></li>
+					<li><a href="avis-legal.html">Avís legal</a></li>
+					<li><a href="privacitat.html">Privacitat</a></li>
+					<li><a href="cookies.html">Cookies</a></li>
 				</ul>
 			</div>
 		</div>

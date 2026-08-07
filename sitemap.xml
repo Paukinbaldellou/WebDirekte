@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<url>
+		<loc>https://direkte.cat/</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/"/>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://direkte.cat/about.html</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/about.html"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/about.html"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/about.html"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/about.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/about.html"/>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://direkte.cat/vals.html</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/vals.html"/>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://direkte.cat/es/</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/"/>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://direkte.cat/es/about.html</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/about.html"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/about.html"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/about.html"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/about.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/about.html"/>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://direkte.cat/es/vals.html</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/vals.html"/>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://direkte.cat/en/</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/"/>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://direkte.cat/en/about.html</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/about.html"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/about.html"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/about.html"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/about.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/about.html"/>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://direkte.cat/en/vals.html</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/vals.html"/>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://direkte.cat/fr/</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/"/>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://direkte.cat/fr/about.html</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/about.html"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/about.html"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/about.html"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/about.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/about.html"/>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://direkte.cat/fr/vals.html</loc>
+		<xhtml:link rel="alternate" hreflang="ca" href="https://direkte.cat/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="es" href="https://direkte.cat/es/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="en" href="https://direkte.cat/en/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://direkte.cat/fr/vals.html"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://direkte.cat/vals.html"/>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+</urlset>
