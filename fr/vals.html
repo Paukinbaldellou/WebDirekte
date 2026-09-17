@@ -26,6 +26,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="../styles.css">
+	<link rel="preload" as="image" href="../assets/img/gift-teaser.jpg" fetchpriority="high">
 
 	<script type="application/ld+json">
 	{
@@ -98,10 +99,12 @@
 	<main>
 
 		<!-- HERO TIPOGRÀFIC -->
-		<section class="vals-hero-typo" data-screen-label="Vals — Hero">
-			<div class="container">
+		<section class="page-hero page-hero--vals" data-screen-label="Vals — Hero">
+			<div class="page-hero__media img-gift-teaser" role="img" aria-label="Détail gastronomique"></div>
+			<div class="scrim scrim--page" aria-hidden="true"></div>
+			<div class="page-hero__content">
 				<div class="kicker"><span class="kicker__num">—</span><span>Bons cadeaux</span></div>
-				<h1 class="vals-hero-typo__title">Offrir DIREKTE.</h1>
+				<h1 class="page-hero__title">Offrir DIREKTE.</h1>
 				<p class="vals-hero-typo__sub">Paiement sécurisé avec Stripe · Par email, prêt à envoyer</p>
 			</div>
 		</section>
@@ -303,8 +306,8 @@
 				<div class="site-footer__col">
 					<h4 class="site-footer__heading">Horaires</h4>
 					<ul class="site-footer__list site-footer__hours">
-						<li><span>Mar – Ven</span><span>19:30 · 21:45</span></li>
-						<li><span>Sam</span><span>13:00 · 15:15</span></li>
+						<li><span>Mar – Ven</span><span>19:30 et 21:45</span></li>
+						<li><span>Sam</span><span>13:00 et 15:15</span></li>
 						<li class="is-closed"><span>Dim · Lun</span><span>Fermé</span></li>
 					</ul>
 				</div>
