@@ -760,6 +760,8 @@ a:hover [role="img"].media-zoom {
 }
 
 .page-hero .kicker { margin-bottom: var(--space-5); }
+.page-hero--vals { min-height: 68vh; }
+.page-hero--vals .vals-hero-typo__sub { position: relative; z-index: 2; }
 
 @media (prefers-reduced-motion: reduce) {
 	.page-hero__content { animation: none; }
@@ -2256,7 +2258,9 @@ a:hover [role="img"].media-zoom {
 .ferments { padding: var(--space-14) 0; }
 .ferments__header { margin-bottom: var(--space-9); }
 .ferments__title { font-size: var(--fs-title); letter-spacing: var(--ls-tight); margin-bottom: var(--space-4); }
-.ferments__lead { font-size: var(--fs-md); color: var(--color-text-muted); max-width: 40ch; }
+.ferments__lead { font-size: var(--fs-md); color: var(--color-text-muted); max-width: 58ch; line-height: var(--lh-relaxed); }
+.ferments__lead--motto { margin-top: var(--space-4); color: var(--color-text); }
+.ferment--more .ferment__name { color: var(--color-text-subtle); font-style: italic; }
 
 .ferments__grid {
 	list-style: none; margin: 0; padding: 0;
@@ -2855,6 +2859,13 @@ a:hover [role="img"].media-zoom {
 	flex-wrap: wrap;
 	gap: var(--space-4) var(--space-9);
 	justify-content: flex-start;
+}
+
+.hours-line__note {
+	flex: 1 1 100%;
+	font-size: var(--fs-sm);
+	letter-spacing: var(--ls-wide);
+	color: var(--color-text);
 }
 
 .hours-line__item {

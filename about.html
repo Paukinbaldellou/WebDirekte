@@ -26,6 +26,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
+	<link rel="preload" as="image" href="assets/img/about-hero.jpg" fetchpriority="high">
 
 	<script type="application/ld+json">
 	{
@@ -135,7 +136,7 @@
 						<div class="ctl__marker"><span>2018</span></div>
 						<div class="ctl__body">
 							<h3 class="ctl__heading">Comença l'aventura</h3>
-							<p class="ctl__text">3 d'abril. Obrim al carrer de les Cabres, 13 — catorze metres quadrats i cuina estacional feta a la vista. Comencem només l'Arnau i un cuiner.</p>
+							<p class="ctl__text">3 d'abril. Obrim al carrer de les Cabres, 13 — catorze metres quadrats i cuina estacional feta a la vista. Comencem només l'Arnau i una cuinera.</p>
 							<div class="ctl__media media-frame"><div class="ctl__media-img img-timeline-2018 media-zoom" role="img" aria-label="Direkte Boqueria, 2018"></div></div>
 						</div>
 					</div>
@@ -144,7 +145,7 @@
 						<div class="ctl__marker"><span>2018</span></div>
 						<div class="ctl__body">
 							<h3 class="ctl__heading">Neix .direktevins</h3>
-							<p class="ctl__text">El projecte .direktevins arrenca de la mà d'Antonio Lopo, junt amb Vinya Ferrer.</p>
+							<p class="ctl__text">El projecte .direktevins arrenca de la mà d'Antonio Lopo.</p>
 						</div>
 					</div>
 
@@ -167,7 +168,7 @@
 					<div class="ctl ctl--l rv">
 						<div class="ctl__marker"><span>2020</span></div>
 						<div class="ctl__body">
-							<h3 class="ctl__heading">Pandèmia: rebel·lar-se o morir</h3>
+							<h3 class="ctl__heading">Pandèmia: adaptació total</h3>
 							<p class="ctl__text">Tanquem un mes i l'aprofitem per fer retrospectiva: reunions setmanals de creativitat amb l'equip, cursos online de cuina per a l'escola Bellart i l'Aula de la Boqueria, i comencem a anar al bosc a recol·lectar producte. Al juny obrim de nou duplicant equip i capacitat amb l'obertura de la nostra terrassa.</p>
 						</div>
 					</div>
@@ -299,7 +300,7 @@
 							<li><span class="family-group__who">Sandra Rubio</span><span class="family-group__place">Sants</span></li>
 							<li><span class="family-group__who">Carlota Sampietro</span><span class="family-group__place">Horta</span></li>
 							<li><span class="family-group__who">Luesma &amp; Vega</span><span class="family-group__place">Molins de Rei</span></li>
-							<li><span class="family-group__who">Utuwa Zoshi</span><span class="family-group__place">Tòquio</span></li>
+							<li><span class="family-group__who">Takao Sakyo (Utuwazoshi)</span><span class="family-group__place">Tòquio</span></li>
 						</ul>
 					</div>
 				</div>
@@ -312,18 +313,27 @@
 				<div class="ferments__header rv">
 					<div class="kicker"><span class="kicker__num">04</span><span>Obrador propi</span></div>
 					<h2 class="ferments__title">.direkteferments</h2>
-					<p class="ferments__lead">Fermentem a casa. Temps, sal i paciència.</p>
+					<p class="ferments__lead">Des del nostre taller de fermentació i conservació, amagat al pis de dalt, anem traient diferents productes segons la temporada que ens serveixen per anar elaborant els menús durant tot l'any.</p>
+					<p class="ferments__lead ferments__lead--motto">Fermentem, encurtim i macerem a casa. Temps i paciència.</p>
 				</div>
 				<ul class="ferments__grid rv">
-					<li class="ferment"><span class="ferment__num">01</span><span class="ferment__name">Misos de fruits secs</span></li>
-					<li class="ferment"><span class="ferment__num">02</span><span class="ferment__name">Vinagres casolans</span></li>
-					<li class="ferment"><span class="ferment__num">03</span><span class="ferment__name">Kombucha</span></li>
-					<li class="ferment"><span class="ferment__num">04</span><span class="ferment__name">Kefir d'aigua</span></li>
-					<li class="ferment"><span class="ferment__num">05</span><span class="ferment__name">Kefir de llet</span></li>
-					<li class="ferment"><span class="ferment__num">06</span><span class="ferment__name">Lactoferments</span></li>
-					<li class="ferment"><span class="ferment__num">07</span><span class="ferment__name">Mel de pinyes verdes</span></li>
-					<li class="ferment"><span class="ferment__num">08</span><span class="ferment__name">Ferments en sègol i arròs</span></li>
-					<li class="ferment"><span class="ferment__num">09</span><span class="ferment__name">Ratafia casolana</span></li>
+					<li class="ferment"><span class="ferment__name">Misos de llegums, de fruits secs, de tomàquet…</span></li>
+					<li class="ferment"><span class="ferment__name">Vinagres amb desperdicis de fruites i vegetals de temporada</span></li>
+					<li class="ferment"><span class="ferment__name">Kombuches de fulles de temporada</span></li>
+					<li class="ferment"><span class="ferment__name">Begudes carbonatades naturalment</span></li>
+					<li class="ferment"><span class="ferment__name">Kefir d'aigua</span></li>
+					<li class="ferment"><span class="ferment__name">Kefir de diferents llets</span></li>
+					<li class="ferment"><span class="ferment__name">Productes envellits</span></li>
+					<li class="ferment"><span class="ferment__name">Tepaches amb desperdicis de fruita de temporada</span></li>
+					<li class="ferment"><span class="ferment__name">Ferments en sègol i arròs</span></li>
+					<li class="ferment"><span class="ferment__name">Licors casolans (prunes, mores…)</span></li>
+					<li class="ferment"><span class="ferment__name">Ratafia</span></li>
+					<li class="ferment"><span class="ferment__name">Pacharan</span></li>
+					<li class="ferment"><span class="ferment__name">Diferents lactoferments</span></li>
+					<li class="ferment"><span class="ferment__name">Encurtits de productes de temporada</span></li>
+					<li class="ferment"><span class="ferment__name">Conserves</span></li>
+					<li class="ferment"><span class="ferment__name">Melmelades</span></li>
+					<li class="ferment ferment--more"><span class="ferment__name">i molt més</span></li>
 				</ul>
 			</div>
 		</section>
@@ -365,8 +375,8 @@
 				<div class="site-footer__col">
 					<h4 class="site-footer__heading">Horari</h4>
 					<ul class="site-footer__list site-footer__hours">
-						<li><span>Dt – Dv</span><span>19:30 · 21:45</span></li>
-						<li><span>Ds</span><span>13:00 · 15:15</span></li>
+						<li><span>Dt – Dv</span><span>19:30 i 21:45</span></li>
+						<li><span>Ds</span><span>13:00 i 15:15</span></li>
 						<li class="is-closed"><span>Dg · Dl</span><span>Tancat</span></li>
 					</ul>
 				</div>

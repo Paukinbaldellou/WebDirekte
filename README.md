@@ -63,3 +63,11 @@ xarxes socials reals · pàgines legals.
 - Scrims de protecció sobre foto ara són divs reals (`.scrim`), no pseudo-elements.
 - Reveals amb fallback: sense JS tot és visible (classe `.js` al root).
 - `100dvh`, `loading="lazy"`, `prefers-reduced-motion` — es mantenen.
+
+## Ronda 3 — revisió d'Arnau (setembre 2026)
+- Totes les pàgines comencen amb foto: Regala Direkte passa a tenir hero fotogràfic (gift-teaser). Preload de la imatge de capçalera a Inici, About i Regala.
+- Enllaços (linktree): títols en minúscula, sense majúscules forçades.
+- Horari (bloc Menús i peu): «Funcionem amb torns · 19:30 i 21:45 · 13:00 i 15:15».
+- About: 2018 «l'Arnau i una cuinera»; .direktevins només amb Antonio Lopo; 2020 «Pandèmia: adaptació total»; artesans: Takao Sakyo (Utuwazoshi), Tòquio.
+- .direkteferments: text nou del taller, «Temps i paciència» (sense sal), llista ampliada i sense numeració.
+- Premsa: cites noves de Regol, Arenós, Jolonch, Adrià, Broc i Casanovas (originals en CA/ES, traduïdes en EN/FR).

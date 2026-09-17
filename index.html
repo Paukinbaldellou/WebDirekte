@@ -26,6 +26,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
+	<link rel="preload" as="image" href="assets/img/hero-home.jpg" fetchpriority="high">
 
 	<script type="application/ld+json">
 	{
@@ -191,8 +192,9 @@
 				<div class="hours-line rv" id="horaris">
 					<span class="hours-line__label">Horari</span>
 					<div class="hours-line__items">
-						<span class="hours-line__item"><span class="hours-line__day">De dimarts a divendres, sopar</span><span class="hours-line__time">19:30 · 21:45</span></span>
-						<span class="hours-line__item"><span class="hours-line__day">Dissabte, dinar</span><span class="hours-line__time">13:00 · 15:15</span></span>
+						<span class="hours-line__note">Funcionem amb torns</span>
+						<span class="hours-line__item"><span class="hours-line__day">De dimarts a divendres, sopar</span><span class="hours-line__time">19:30 i 21:45</span></span>
+						<span class="hours-line__item"><span class="hours-line__day">Dissabte, dinar</span><span class="hours-line__time">13:00 i 15:15</span></span>
 						<span class="hours-line__item hours-line__item--closed"><span class="hours-line__day">Diumenge i dilluns</span><span class="hours-line__time">Tancat</span></span>
 					</div>
 				</div>
@@ -303,17 +305,19 @@
 
 				<div class="press-strip rv" aria-label="El que diu la premsa">
 					<div class="press-strip__track">
-						<figure class="press-card"><blockquote class="press-card__quote">La barra és l'estrella indiscutible de l'espectacle.</blockquote><figcaption class="press-card__source">Guia Michelin</figcaption></figure>
-						<figure class="press-card"><blockquote class="press-card__quote">Cuina directa i ben mesurada, amb un celler local molt coherent.</blockquote><figcaption class="press-card__source">Guía Repsol</figcaption></figure>
-						<figure class="press-card"><blockquote class="press-card__quote">Una referència per als joves xefs de la ciutat.</blockquote><figcaption class="press-card__source">Time Out Barcelona</figcaption></figure>
-						<figure class="press-card"><blockquote class="press-card__quote">Dels pocs llocs de Barcelona on veus els cuiners treballar de prop.</blockquote><figcaption class="press-card__source">World of Mouth</figcaption></figure>
-						<figure class="press-card"><blockquote class="press-card__quote">El nou emplaçament és fantàstic; mantenen l'encant amb una barra més gran.</blockquote><figcaption class="press-card__source">Ressenya · Verema</figcaption></figure>
+						<figure class="press-card"><blockquote class="press-card__quote">La cocina de Arnau es todo menos aburrida. Es inteligente y deliciosamente lúdica</blockquote><figcaption class="press-card__source">Philippe Regol</figcaption></figure>
+						<figure class="press-card"><blockquote class="press-card__quote">En Direkte hay mucha cocina y hay mucha complejidad</blockquote><figcaption class="press-card__source">Pau Arenós</figcaption></figure>
+						<figure class="press-card"><blockquote class="press-card__quote">Direkte, pasión por el mar y montaña</blockquote><figcaption class="press-card__source">Cristina Jolonch</figcaption></figure>
+						<figure class="press-card"><blockquote class="press-card__quote">Direkte es una maravilla</blockquote><figcaption class="press-card__source">Ferran Adrià</figcaption></figure>
+						<figure class="press-card"><blockquote class="press-card__quote">Merece estar en el top 5 de los mejores restaurantes de Barcelona</blockquote><figcaption class="press-card__source">Oscar Broc</figcaption></figure>
+						<figure class="press-card"><blockquote class="press-card__quote">L'esperit de la Boqueria sobrevola els tres menús on passen i passaren coses immenses</blockquote><figcaption class="press-card__source">Marc Casanovas</figcaption></figure>
 						<!-- duplicat per al loop continu -->
-						<figure class="press-card" aria-hidden="true"><blockquote class="press-card__quote">La barra és l'estrella indiscutible de l'espectacle.</blockquote><figcaption class="press-card__source">Guia Michelin</figcaption></figure>
-						<figure class="press-card" aria-hidden="true"><blockquote class="press-card__quote">Cuina directa i ben mesurada, amb un celler local molt coherent.</blockquote><figcaption class="press-card__source">Guía Repsol</figcaption></figure>
-						<figure class="press-card" aria-hidden="true"><blockquote class="press-card__quote">Una referència per als joves xefs de la ciutat.</blockquote><figcaption class="press-card__source">Time Out Barcelona</figcaption></figure>
-						<figure class="press-card" aria-hidden="true"><blockquote class="press-card__quote">Dels pocs llocs de Barcelona on veus els cuiners treballar de prop.</blockquote><figcaption class="press-card__source">World of Mouth</figcaption></figure>
-						<figure class="press-card" aria-hidden="true"><blockquote class="press-card__quote">El nou emplaçament és fantàstic; mantenen l'encant amb una barra més gran.</blockquote><figcaption class="press-card__source">Ressenya · Verema</figcaption></figure>
+						<figure class="press-card" aria-hidden="true"><blockquote class="press-card__quote">La cocina de Arnau es todo menos aburrida. Es inteligente y deliciosamente lúdica</blockquote><figcaption class="press-card__source">Philippe Regol</figcaption></figure>
+						<figure class="press-card" aria-hidden="true"><blockquote class="press-card__quote">En Direkte hay mucha cocina y hay mucha complejidad</blockquote><figcaption class="press-card__source">Pau Arenós</figcaption></figure>
+						<figure class="press-card" aria-hidden="true"><blockquote class="press-card__quote">Direkte, pasión por el mar y montaña</blockquote><figcaption class="press-card__source">Cristina Jolonch</figcaption></figure>
+						<figure class="press-card" aria-hidden="true"><blockquote class="press-card__quote">Direkte es una maravilla</blockquote><figcaption class="press-card__source">Ferran Adrià</figcaption></figure>
+						<figure class="press-card" aria-hidden="true"><blockquote class="press-card__quote">Merece estar en el top 5 de los mejores restaurantes de Barcelona</blockquote><figcaption class="press-card__source">Oscar Broc</figcaption></figure>
+						<figure class="press-card" aria-hidden="true"><blockquote class="press-card__quote">L'esperit de la Boqueria sobrevola els tres menús on passen i passaren coses immenses</blockquote><figcaption class="press-card__source">Marc Casanovas</figcaption></figure>
 					</div>
 				</div>
 			</div>
@@ -346,8 +350,8 @@
 				<div class="site-footer__col">
 					<h4 class="site-footer__heading">Horari</h4>
 					<ul class="site-footer__list site-footer__hours">
-						<li><span>Dt – Dv</span><span>19:30 · 21:45</span></li>
-						<li><span>Ds</span><span>13:00 · 15:15</span></li>
+						<li><span>Dt – Dv</span><span>19:30 i 21:45</span></li>
+						<li><span>Ds</span><span>13:00 i 15:15</span></li>
 						<li class="is-closed"><span>Dg · Dl</span><span>Tancat</span></li>
 					</ul>
 				</div>
