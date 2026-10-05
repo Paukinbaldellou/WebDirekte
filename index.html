@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="assets/logo/k-seal.png">
+	<link rel="apple-touch-icon" href="assets/logo/k-seal.png">
+	<meta name="theme-color" content="#0B0B0B">
 	<title>Direkte — Barra de cuina estacional a l'Eixample, Barcelona</title>
 	<meta name="description" content="DIREKTE, la barra de cuina estacional del chef Arnau Muñío a l'Eixample de Barcelona. Menús de temporada, celler propi i reserves en línia. Carrer de París, 200.">
 	<link rel="canonical" href="https://direkte.cat/">
@@ -26,7 +28,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
-	<link rel="preload" as="image" href="assets/img/hero-home.jpg" fetchpriority="high">
+	<link rel="preload" as="image" href="assets/img/hero-home.webp" type="image/webp" fetchpriority="high">
 
 	<script type="application/ld+json">
 	{
@@ -56,20 +58,13 @@
 </head>
 <body>
 
-<template id="__bundler_thumbnail">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-		<rect width="100" height="100" fill="#0B0B0B"/>
-		<circle cx="50" cy="50" r="27" fill="none" stroke="#E8562D" stroke-width="2"/>
-		<text x="50" y="50" fill="#F5F5F5" font-family="Courier New, monospace" font-size="30" font-weight="700" text-anchor="middle" dominant-baseline="central">K</text>
-	</svg>
-</template>
 
 
 	<!-- HEADER -->
 	<header class="site-header" id="site-header">
 		<div class="site-header__inner">
 			<a href="index.html" class="site-header__logo" aria-label="Direkte — inici" title="Carrer de les Cabres, 13 — on tot va començar">
-				<img src="assets/logo/goat-alpha.png" alt="Direkte" class="site-header__goat">
+				<img src="assets/logo/goat-alpha.webp" alt="Direkte" class="site-header__goat">
 			</a>
 
 			<nav class="site-nav" aria-label="Navegació principal">
@@ -80,7 +75,7 @@
 				</ul>
 				<div class="site-nav__end">
 					<details class="lang-menu">
-						<summary class="lang-menu__current" aria-label="CA">CA</summary>
+						<summary class="lang-menu__current" aria-label="Idioma: català">CA</summary>
 						<div class="lang-menu__list">
 						<a href="index.html" class="is-active" hreflang="ca">CA</a>
 						<a href="es/index.html" hreflang="es">ES</a>
@@ -106,11 +101,11 @@
 				<li><a href="index.html" class="mobile-menu__link is-active"><span class="mobile-menu__num">01</span><span>Inici</span></a></li>
 				<li><a href="about.html" class="mobile-menu__link"><span class="mobile-menu__num">02</span><span>About</span></a></li>
 				<li><a href="vals.html" class="mobile-menu__link"><span class="mobile-menu__num">03</span><span>Regala DIREKTE</span></a></li>
-				<li><a href="#reserves" class="mobile-menu__link" data-menu-close><span class="mobile-menu__num">04</span><span>Reserves</span></a></li>
+				<li><a href="#reserves" class="mobile-menu__link"><span class="mobile-menu__num">04</span><span>Reserves</span></a></li>
 			</ul>
 		</nav>
 		<div class="mobile-menu__meta">
-			<p>Carrer de París, 200 · Eixample · Barcelona</p>
+			<p><span class="nw">Carrer de París, 200</span> · <span class="nw">Eixample</span> · <span class="nw">Barcelona</span></p>
 			<p>dimarts a divendres, sopar · dissabte, dinar</p>
 			<p><a href="tel:+34934508789">934 50 87 89</a> · <a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
 			<p class="mobile-menu__langs"><a href="index.html" class="is-active">CA</a> · <a href="es/index.html">ES</a> · <a href="en/index.html">EN</a> · <a href="fr/index.html">FR</a></p>
@@ -127,7 +122,7 @@
 			<div class="hero__inner">
 				<div class="hero__brand">
 					<h1 class="hero__wordmark" style="margin: 0;">
-						<img src="assets/logo/wordmark-clean.png" alt="DIREKTE" class="hero__wordmark-img">
+						<img src="assets/logo/wordmark-clean.webp" alt="DIREKTE" class="hero__wordmark-img">
 					</h1>
 
 					<p class="hero__tagline">Barra de cuina estacional</p>
@@ -148,7 +143,7 @@
 				</div>
 
 				<div class="hero__aside">
-					<img src="assets/logo/k-seal-bone.png" alt="" class="hero__seal" aria-hidden="true">
+					<img src="assets/logo/k-seal-bone.webp" alt="" class="hero__seal" aria-hidden="true">
 				</div>
 			</div>
 		</section>
@@ -229,7 +224,7 @@
 
 		<!-- RESERVES + CONTACTE -->
 		<section class="reserves-block reserves-block--v2" id="reserves" data-screen-label="Home — Reserves">
-			<img src="assets/logo/k-seal-bone.png" alt="" class="reserves-block__seal" aria-hidden="true">
+			<img src="assets/logo/k-seal-bone.webp" alt="" class="reserves-block__seal" aria-hidden="true">
 			<div class="container container--narrow">
 				<div class="kicker rv"><span class="kicker__num">02</span><span>Reserves</span></div>
 				<iframe
@@ -252,12 +247,10 @@
 						<p class="contact-map__address">La barra és al Carrer de París, 200</p>
 						<a href="https://share.google/BHhJw73ZDPwbo8aN2" target="_blank" rel="noopener" class="contact-map__link">Veure a Google Maps</a>
 					</div>
-					<iframe
-						src="https://www.google.com/maps?q=Carrer+de+Par%C3%ADs+200,+08008+Barcelona&output=embed&z=16"
-						title="Mapa — Direkte, Carrer de París 200, Barcelona"
-						class="contact-map__frame"
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<div class="contact-map__facade" data-map-src="https://www.google.com/maps?q=Carrer+de+Par%C3%ADs+200,+08008+Barcelona&output=embed&z=16" data-map-title="Mapa — Direkte, Carrer de París 200, Barcelona">
+						<button type="button" class="btn btn--ghost" data-map-load>Veure el mapa</button>
+						<p class="contact-map__facade-note">En carregar el mapa, Google pot instal·lar cookies.</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -330,7 +323,7 @@
 		<div class="container">
 			<div class="site-footer__grid">
 				<div class="site-footer__brand">
-					<img src="assets/logo/wordmark-clean.png" alt="Direkte" class="site-footer__wordmark" loading="lazy">
+					<img src="assets/logo/wordmark-clean.webp" alt="Direkte" class="site-footer__wordmark" loading="lazy">
 					<div class="site-footer__awards" aria-label="Guia Michelin i Sol Repsol">
 						<img src="assets/awards/michelin-plate.png" alt="Guia Michelin" loading="lazy">
 						<img src="assets/awards/repsol-plate.svg" alt="1 Sol Guía Repsol" loading="lazy">

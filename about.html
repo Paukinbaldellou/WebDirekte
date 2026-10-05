@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="assets/logo/k-seal.png">
+	<link rel="apple-touch-icon" href="assets/logo/k-seal.png">
+	<meta name="theme-color" content="#0B0B0B">
 	<title>Descobreix Direkte — El chef Arnau Muñío, el camí i la família</title>
 	<meta name="description" content="De la Boqueria a l'Eixample: la història de Direkte, el chef Arnau Muñío, la família d'artesans i cellers, i l'obrador de ferments propi.">
 	<link rel="canonical" href="https://direkte.cat/about.html">
@@ -17,7 +19,9 @@
 	<meta property="og:title" content="Descobreix Direkte — El chef, el camí i la família">
 	<meta property="og:description" content="De la Boqueria a l'Eixample: 25 anys d'ofici, la família d'artesans i cellers, i l'obrador de ferments propi.">
 	<meta property="og:url" content="https://direkte.cat/about.html">
-	<meta property="og:image" content="https://direkte.cat/assets/img/about-hero.jpg">
+	<meta property="og:image" content="https://direkte.cat/assets/img/og-about.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
 	<meta property="og:locale" content="ca_ES">
 	<meta name="twitter:card" content="summary_large_image">
 
@@ -26,7 +30,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
-	<link rel="preload" as="image" href="assets/img/about-hero.jpg" fetchpriority="high">
+	<link rel="preload" as="image" href="assets/img/about-hero.webp" type="image/webp" fetchpriority="high">
 
 	<script type="application/ld+json">
 	{
@@ -36,7 +40,7 @@
 		"jobTitle": "Chef i fundador",
 		"description": "Chef amb 25 anys d'ofici: Comerç 24, La Alquería de elBullihotel, grup elBarri i fundador de Direkte.",
 		"url": "https://direkte.cat/about.html",
-		"image": "https://direkte.cat/assets/img/chef-portrait.jpg",
+		"image": "https://direkte.cat/assets/img/chef-portrait.webp" type="image/webp",
 		"worksFor": {"@type": "Restaurant", "name": "Direkte", "url": "https://direkte.cat/"},
 		"sameAs": ["https://www.instagram.com/direkte_restaurant/"]
 	}
@@ -44,20 +48,13 @@
 </head>
 <body>
 
-<template id="__bundler_thumbnail">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-		<rect width="100" height="100" fill="#0B0B0B"/>
-		<circle cx="50" cy="50" r="27" fill="none" stroke="#E8562D" stroke-width="2"/>
-		<text x="50" y="50" fill="#F5F5F5" font-family="Courier New, monospace" font-size="30" font-weight="700" text-anchor="middle" dominant-baseline="central">K</text>
-	</svg>
-</template>
 
 
 	<!-- HEADER -->
 	<header class="site-header" id="site-header">
 		<div class="site-header__inner">
 			<a href="index.html" class="site-header__logo" aria-label="Direkte — inici" title="Carrer de les Cabres, 13 — on tot va començar">
-				<img src="assets/logo/goat-alpha.png" alt="Direkte" class="site-header__goat">
+				<img src="assets/logo/goat-alpha.webp" alt="Direkte" class="site-header__goat">
 			</a>
 
 			<nav class="site-nav" aria-label="Navegació principal">
@@ -68,7 +65,7 @@
 				</ul>
 				<div class="site-nav__end">
 					<details class="lang-menu">
-						<summary class="lang-menu__current" aria-label="CA">CA</summary>
+						<summary class="lang-menu__current" aria-label="Idioma: català">CA</summary>
 						<div class="lang-menu__list">
 						<a href="about.html" class="is-active" hreflang="ca">CA</a>
 						<a href="es/about.html" hreflang="es">ES</a>
@@ -98,7 +95,7 @@
 			</ul>
 		</nav>
 		<div class="mobile-menu__meta">
-			<p>Carrer de París, 200 · Eixample · Barcelona</p>
+			<p><span class="nw">Carrer de París, 200</span> · <span class="nw">Eixample</span> · <span class="nw">Barcelona</span></p>
 			<p>dimarts a divendres, sopar · dissabte, dinar</p>
 			<p><a href="tel:+34934508789">934 50 87 89</a> · <a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
 			<p class="mobile-menu__langs"><a href="about.html" class="is-active">CA</a> · <a href="es/about.html">ES</a> · <a href="en/about.html">EN</a> · <a href="fr/about.html">FR</a></p>
@@ -355,7 +352,7 @@
 		<div class="container">
 			<div class="site-footer__grid">
 				<div class="site-footer__brand">
-					<img src="assets/logo/wordmark-clean.png" alt="Direkte" class="site-footer__wordmark" loading="lazy">
+					<img src="assets/logo/wordmark-clean.webp" alt="Direkte" class="site-footer__wordmark" loading="lazy">
 					<div class="site-footer__awards" aria-label="Guia Michelin i Sol Repsol">
 						<img src="assets/awards/michelin-plate.png" alt="Guia Michelin" loading="lazy">
 						<img src="assets/awards/repsol-plate.svg" alt="1 Sol Guía Repsol" loading="lazy">

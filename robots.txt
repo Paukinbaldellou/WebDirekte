@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /avis-legal.html
-Disallow: /privacitat.html
-Disallow: /cookies.html
 
 Sitemap: https://direkte.cat/sitemap.xml

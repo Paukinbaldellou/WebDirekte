@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="assets/logo/k-seal.png">
+	<link rel="apple-touch-icon" href="assets/logo/k-seal.png">
+	<meta name="theme-color" content="#0B0B0B">
 	<title>Regala DIREKTE — Vals regal</title>
 	<meta name="description" content="Regala una experiència Direkte. Vals regal dels menús de temporada, maridatges i detalls per acompanyar. Validesa d'1 any.">
 	<link rel="canonical" href="https://direkte.cat/vals.html">
@@ -17,7 +19,9 @@
 	<meta property="og:title" content="Regala DIREKTE — Vals regal">
 	<meta property="og:description" content="Vals regal dels menús de temporada, maridatges i detalls per acompanyar. Per email, llest per enviar.">
 	<meta property="og:url" content="https://direkte.cat/vals.html">
-	<meta property="og:image" content="https://direkte.cat/assets/img/gift-teaser.jpg">
+	<meta property="og:image" content="https://direkte.cat/assets/img/og-vals.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
 	<meta property="og:locale" content="ca_ES">
 	<meta name="twitter:card" content="summary_large_image">
 
@@ -26,7 +30,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
-	<link rel="preload" as="image" href="assets/img/gift-teaser.jpg" fetchpriority="high">
+	<link rel="preload" as="image" href="assets/img/gift-teaser.webp" type="image/webp" fetchpriority="high">
 
 	<script type="application/ld+json">
 	{
@@ -44,20 +48,13 @@
 </head>
 <body>
 
-<template id="__bundler_thumbnail">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-		<rect width="100" height="100" fill="#0B0B0B"/>
-		<circle cx="50" cy="50" r="27" fill="none" stroke="#E8562D" stroke-width="2"/>
-		<text x="50" y="50" fill="#F5F5F5" font-family="Courier New, monospace" font-size="30" font-weight="700" text-anchor="middle" dominant-baseline="central">K</text>
-	</svg>
-</template>
 
 
 	<!-- HEADER -->
 	<header class="site-header" id="site-header">
 		<div class="site-header__inner">
 			<a href="index.html" class="site-header__logo" aria-label="Direkte — inici" title="Carrer de les Cabres, 13 — on tot va començar">
-				<img src="assets/logo/goat-alpha.png" alt="Direkte" class="site-header__goat">
+				<img src="assets/logo/goat-alpha.webp" alt="Direkte" class="site-header__goat">
 			</a>
 
 			<nav class="site-nav" aria-label="Navegació principal">
@@ -68,7 +65,7 @@
 				</ul>
 				<div class="site-nav__end">
 					<details class="lang-menu">
-						<summary class="lang-menu__current" aria-label="CA">CA</summary>
+						<summary class="lang-menu__current" aria-label="Idioma: català">CA</summary>
 						<div class="lang-menu__list">
 						<a href="vals.html" class="is-active" hreflang="ca">CA</a>
 						<a href="es/vals.html" hreflang="es">ES</a>
@@ -98,7 +95,7 @@
 			</ul>
 		</nav>
 		<div class="mobile-menu__meta">
-			<p>Carrer de París, 200 · Eixample · Barcelona</p>
+			<p><span class="nw">Carrer de París, 200</span> · <span class="nw">Eixample</span> · <span class="nw">Barcelona</span></p>
 			<p>dimarts a divendres, sopar · dissabte, dinar</p>
 			<p><a href="tel:+34934508789">934 50 87 89</a> · <a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
 			<p class="mobile-menu__langs"><a href="vals.html" class="is-active">CA</a> · <a href="es/vals.html">ES</a> · <a href="en/vals.html">EN</a> · <a href="fr/vals.html">FR</a></p>
@@ -114,17 +111,17 @@
 			<div class="page-hero__content">
 				<div class="kicker"><span class="kicker__num">—</span><span>Vals regal</span></div>
 				<h1 class="page-hero__title">Regala DIREKTE.</h1>
-				<p class="vals-hero-typo__sub">Pagament segur amb Stripe · Per email, llest per enviar</p>
+				<p class="vals-hero-typo__sub">Per email, llest per enviar</p>
 			</div>
 		</section>
 
 		<!-- PRODUCTES -->
 		<section class="vals-products" id="productes" data-screen-label="Vals — Productes">
 			<div class="container">
+				<h2 class="sr-only">Els vals</h2>
 
 				<div class="vals-list">
 
-					<!-- TODO Arnau: substituir cada href="#" pel Payment Link de Stripe (https://buy.stripe.com/...). Per a l'import obert, crea un Payment Link amb «el client tria l'import». -->
 
 					<!-- 01 — MENÚ DIREKTE -->
 					<article class="val-item rv">
@@ -144,7 +141,7 @@
 							<span class="val-pairing__box" aria-hidden="true"></span>
 							<span class="val-pairing__text">Afegir maridatge Direkte <span class="val-pairing__price">+ 54 €</span></span>
 						</label>
-						<a href="#" data-stripe="direkte" class="btn btn--accent btn--block val-item__cta">Regalar</a>
+						<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="direkte" class="btn btn--accent btn--block val-item__cta">Regalar</a>
 					</article>
 
 					<!-- 02 — MENÚ BOQUERIA -->
@@ -165,7 +162,7 @@
 							<span class="val-pairing__box" aria-hidden="true"></span>
 							<span class="val-pairing__text">Afegir maridatge Boqueria <span class="val-pairing__price">+ 64 €</span></span>
 						</label>
-						<a href="#" data-stripe="boqueria" class="btn btn--accent btn--block val-item__cta">Regalar</a>
+						<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="boqueria" class="btn btn--accent btn--block val-item__cta">Regalar</a>
 					</article>
 
 					<!-- 03 — MENÚ EIXAMPLE -->
@@ -186,7 +183,7 @@
 							<span class="val-pairing__box" aria-hidden="true"></span>
 							<span class="val-pairing__text">Afegir maridatge Eixample <span class="val-pairing__price">+ 74 €</span></span>
 						</label>
-						<a href="#" data-stripe="eixample" class="btn btn--accent btn--block val-item__cta">Regalar</a>
+						<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="eixample" class="btn btn--accent btn--block val-item__cta">Regalar</a>
 					</article>
 
 					<!-- 04 — IMPORT OBERT -->
@@ -204,7 +201,7 @@
 									name="open-amount"
 									min="20"
 									step="10"
-									placeholder="0"
+									placeholder="20"
 									aria-label="Import en euros"
 									class="val-item__amount-input"
 								>
@@ -212,7 +209,7 @@
 							</div>
 						</div>
 						<p class="val-item__hint">Mínim 20 €.</p>
-						<a href="#" data-stripe="import-obert" class="btn btn--accent btn--block val-item__cta">Regalar</a>
+						<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="import-obert" class="btn btn--accent btn--block val-item__cta">Regalar</a>
 					</article>
 
 				</div>
@@ -224,17 +221,17 @@
 						<li class="extra">
 							<span class="extra__name">1 ampolla de vi</span>
 							<span class="extra__price">38 €</span>
-							<a href="#" data-stripe="ampolla-vi" class="extra__cta">Regalar</a>
+							<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="ampolla-vi" class="extra__cta">Regalar</a>
 						</li>
 						<li class="extra">
 							<span class="extra__name">2 copes d'escumós</span>
 							<span class="extra__price">14 €</span>
-							<a href="#" data-stripe="copes-escumos" class="extra__cta">Regalar</a>
+							<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="copes-escumos" class="extra__cta">Regalar</a>
 						</li>
 						<li class="extra">
 							<span class="extra__name">2 copes d'escumós + 2 serveis d'aigua + 2 cafès</span>
 							<span class="extra__price">25 €</span>
-							<a href="#" data-stripe="pack-escumos" class="extra__cta">Regalar</a>
+							<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="pack-escumos" class="extra__cta">Regalar</a>
 						</li>
 					</ul>
 				</div>
@@ -244,8 +241,8 @@
 		<!-- VALIDESA -->
 		<section class="validity" data-screen-label="Vals — Validesa">
 			<div class="container container--reading">
-				<img src="assets/logo/k-seal-bone.png" alt="" class="validity__seal rv" aria-hidden="true">
-				<h3 class="validity__title rv">Validesa</h3>
+				<img src="assets/logo/k-seal-bone.webp" alt="" class="validity__seal rv" aria-hidden="true">
+				<h2 class="validity__title rv">Validesa</h2>
 				<p class="validity__text rv">1 any des de la data de compra.</p>
 				<p class="validity__text validity__text--muted rv">El rebràs per email, llest per enviar o imprimir.</p>
 			</div>
@@ -260,7 +257,7 @@
 					<details class="faq__item rv">
 						<summary class="faq__question">Com rebo el val regal?</summary>
 						<div class="faq__answer">
-							<p>Un cop feta la compra, rebràs el val al teu email en format PDF.</p>
+							<p>Fes la comanda des d'aquesta pàgina. T'escriurem per confirmar-la i, un cop fet el pagament, rebràs el val al teu email en format PDF.</p>
 						</div>
 					</details>
 
@@ -295,7 +292,7 @@
 		<div class="container">
 			<div class="site-footer__grid">
 				<div class="site-footer__brand">
-					<img src="assets/logo/wordmark-clean.png" alt="Direkte" class="site-footer__wordmark" loading="lazy">
+					<img src="assets/logo/wordmark-clean.webp" alt="Direkte" class="site-footer__wordmark" loading="lazy">
 					<div class="site-footer__awards" aria-label="Guia Michelin i Sol Repsol">
 						<img src="assets/awards/michelin-plate.png" alt="Guia Michelin" loading="lazy">
 						<img src="assets/awards/repsol-plate.svg" alt="1 Sol Guía Repsol" loading="lazy">

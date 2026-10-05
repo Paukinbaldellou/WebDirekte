@@ -58,5 +58,6 @@ Si la vas publicar **amb la CLI** (Opció A, arrossegar/`vercel`), per actualitz
 
 - Les fonts es carreguen de Google Fonts (cal connexió a internet).
 - `_opcions-hero.html` és un fitxer de treball intern (comparativa d'opcions). No forma part de la web pública; el pots esborrar abans de pujar-la.
-- Pendents abans de la versió final: iframe de reserves (TheFork) i enllaços de pagament de Stripe als botons "Regalar" de `vals.html` (busca `data-stripe`).
+- Vals regal: sense Stripe. Els botons "Regalar" obren un formulari que envia la comanda per email a `reserves@direkte.cat` via FormSubmit (formsubmit.co). **Primer enviament:** FormSubmit envia un correu d'activació a aquesta adreça; cal clicar-lo una vegada. L'activació va per parella email + domini: si es prova des de `*.vercel.app`, caldrà tornar a activar-lo quan la web passi a `direkte.cat`. Per canviar l'adreça de destí: `GIFT_EMAIL` a l'inici del bloc «Vals — formulari» de `script.js`.
+- Pendents abans de publicar: raó social i NIF a `avis-legal.html` i `privacitat.html`.
 - Quan tinguis el domini propi: **Vercel → projecte → Settings → Domains → Add**, i seguir les instruccions de DNS que et doni.
