@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="../assets/logo/k-seal.png">
+	<link rel="apple-touch-icon" href="../assets/logo/k-seal.png">
+	<meta name="theme-color" content="#0B0B0B">
 	<title>Give DIREKTE — Gift vouchers</title>
 	<meta name="description" content="Give a Direkte experience. Gift vouchers for the seasonal menus, wine pairings and extras. Valid for 1 year.">
 	<link rel="canonical" href="https://direkte.cat/en/vals.html">
@@ -17,7 +19,9 @@
 	<meta property="og:title" content="Give DIREKTE — Gift vouchers">
 	<meta property="og:description" content="Gift vouchers for the seasonal menus, wine pairings and extras. By email, ready to send.">
 	<meta property="og:url" content="https://direkte.cat/en/vals.html">
-	<meta property="og:image" content="https://direkte.cat/assets/img/gift-teaser.jpg">
+	<meta property="og:image" content="https://direkte.cat/assets/img/og-vals.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
 	<meta property="og:locale" content="en_GB">
 	<meta name="twitter:card" content="summary_large_image">
 
@@ -26,7 +30,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="../styles.css">
-	<link rel="preload" as="image" href="../assets/img/gift-teaser.jpg" fetchpriority="high">
+	<link rel="preload" as="image" href="../assets/img/gift-teaser.webp" type="image/webp" fetchpriority="high">
 
 	<script type="application/ld+json">
 	{
@@ -48,7 +52,7 @@
 	<header class="site-header" id="site-header">
 		<div class="site-header__inner">
 			<a href="index.html" class="site-header__logo" aria-label="Direkte — home" title="Carrer de les Cabres, 13 — where it all began">
-				<img src="../assets/logo/goat-alpha.png" alt="Direkte" class="site-header__goat">
+				<img src="../assets/logo/goat-alpha.webp" alt="Direkte" class="site-header__goat">
 			</a>
 
 			<nav class="site-nav" aria-label="Main navigation">
@@ -59,7 +63,7 @@
 				</ul>
 				<div class="site-nav__end">
 					<details class="lang-menu">
-						<summary class="lang-menu__current" aria-label="EN">EN</summary>
+						<summary class="lang-menu__current" aria-label="Language: English">EN</summary>
 						<div class="lang-menu__list">
 						<a href="../vals.html" hreflang="ca">CA</a>
 						<a href="../es/vals.html" hreflang="es">ES</a>
@@ -89,7 +93,7 @@
 			</ul>
 		</nav>
 		<div class="mobile-menu__meta">
-			<p>Carrer de París, 200 · Eixample · Barcelona</p>
+			<p><span class="nw">Carrer de París, 200</span> · <span class="nw">Eixample</span> · <span class="nw">Barcelona</span></p>
 			<p>Tuesday to Friday, dinner · Saturday, lunch</p>
 			<p><a href="tel:+34934508789">934 50 87 89</a> · <a href="mailto:reserves@direkte.cat">reserves@direkte.cat</a></p>
 			<p class="mobile-menu__langs"><a href="../vals.html">CA</a> · <a href="../es/vals.html">ES</a> · <a href="vals.html" class="is-active">EN</a> · <a href="../fr/vals.html">FR</a></p>
@@ -105,17 +109,17 @@
 			<div class="page-hero__content">
 				<div class="kicker"><span class="kicker__num">—</span><span>Gift vouchers</span></div>
 				<h1 class="page-hero__title">Give DIREKTE.</h1>
-				<p class="vals-hero-typo__sub">Secure payment with Stripe · By email, ready to send</p>
+				<p class="vals-hero-typo__sub">By email, ready to send</p>
 			</div>
 		</section>
 
 		<!-- PRODUCTES -->
 		<section class="vals-products" id="productes" data-screen-label="Vals — Productes">
 			<div class="container">
+				<h2 class="sr-only">The vouchers</h2>
 
 				<div class="vals-list">
 
-					<!-- TODO Arnau: substituir cada href="#" pel Payment Link de Stripe (https://buy.stripe.com/...). Per a l'import obert, crea un Payment Link amb «el client tria l'import». -->
 
 					<!-- 01 — MENÚ DIREKTE -->
 					<article class="val-item rv">
@@ -135,7 +139,7 @@
 							<span class="val-pairing__box" aria-hidden="true"></span>
 							<span class="val-pairing__text">Add the Direkte wine pairing <span class="val-pairing__price">+ 54 €</span></span>
 						</label>
-						<a href="#" data-stripe="direkte" class="btn btn--accent btn--block val-item__cta">Give</a>
+						<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="direkte" class="btn btn--accent btn--block val-item__cta">Give</a>
 					</article>
 
 					<!-- 02 — MENÚ BOQUERIA -->
@@ -156,7 +160,7 @@
 							<span class="val-pairing__box" aria-hidden="true"></span>
 							<span class="val-pairing__text">Add the Boqueria wine pairing <span class="val-pairing__price">+ 64 €</span></span>
 						</label>
-						<a href="#" data-stripe="boqueria" class="btn btn--accent btn--block val-item__cta">Give</a>
+						<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="boqueria" class="btn btn--accent btn--block val-item__cta">Give</a>
 					</article>
 
 					<!-- 03 — MENÚ EIXAMPLE -->
@@ -177,7 +181,7 @@
 							<span class="val-pairing__box" aria-hidden="true"></span>
 							<span class="val-pairing__text">Add the Eixample wine pairing <span class="val-pairing__price">+ 74 €</span></span>
 						</label>
-						<a href="#" data-stripe="eixample" class="btn btn--accent btn--block val-item__cta">Give</a>
+						<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="eixample" class="btn btn--accent btn--block val-item__cta">Give</a>
 					</article>
 
 					<!-- 04 — IMPORT OBERT -->
@@ -195,7 +199,7 @@
 									name="open-amount"
 									min="20"
 									step="10"
-									placeholder="0"
+									placeholder="20"
 									aria-label="Amount in euros"
 									class="val-item__amount-input"
 								>
@@ -203,7 +207,7 @@
 							</div>
 						</div>
 						<p class="val-item__hint">Minimum €20.</p>
-						<a href="#" data-stripe="import-obert" class="btn btn--accent btn--block val-item__cta">Give</a>
+						<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="import-obert" class="btn btn--accent btn--block val-item__cta">Give</a>
 					</article>
 
 				</div>
@@ -215,17 +219,17 @@
 						<li class="extra">
 							<span class="extra__name">1 bottle of wine</span>
 							<span class="extra__price">38 €</span>
-							<a href="#" data-stripe="ampolla-vi" class="extra__cta">Give</a>
+							<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="ampolla-vi" class="extra__cta">Give</a>
 						</li>
 						<li class="extra">
 							<span class="extra__name">2 glasses of sparkling wine</span>
 							<span class="extra__price">14 €</span>
-							<a href="#" data-stripe="copes-escumos" class="extra__cta">Give</a>
+							<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="copes-escumos" class="extra__cta">Give</a>
 						</li>
 						<li class="extra">
 							<span class="extra__name">2 glasses of sparkling wine + 2 waters + 2 coffees</span>
 							<span class="extra__price">25 €</span>
-							<a href="#" data-stripe="pack-escumos" class="extra__cta">Give</a>
+							<a href="mailto:reserves@direkte.cat?subject=Vals%20regal" data-gift="pack-escumos" class="extra__cta">Give</a>
 						</li>
 					</ul>
 				</div>
@@ -235,8 +239,8 @@
 		<!-- VALIDESA -->
 		<section class="validity" data-screen-label="Vals — Validesa">
 			<div class="container container--reading">
-				<img src="../assets/logo/k-seal-bone.png" alt="" class="validity__seal rv" aria-hidden="true">
-				<h3 class="validity__title rv">Validity</h3>
+				<img src="../assets/logo/k-seal-bone.webp" alt="" class="validity__seal rv" aria-hidden="true">
+				<h2 class="validity__title rv">Validity</h2>
 				<p class="validity__text rv">1 year from the date of purchase.</p>
 				<p class="validity__text validity__text--muted rv">You will receive it by email, ready to send or print.</p>
 			</div>
@@ -251,7 +255,7 @@
 					<details class="faq__item rv">
 						<summary class="faq__question">How do I receive the gift voucher?</summary>
 						<div class="faq__answer">
-							<p>Once purchased, you will receive the voucher by email as a PDF.</p>
+							<p>Place your request on this page. We'll write to confirm it and, once paid, you'll receive the voucher by email as a PDF.</p>
 						</div>
 					</details>
 
@@ -286,7 +290,7 @@
 		<div class="container">
 			<div class="site-footer__grid">
 				<div class="site-footer__brand">
-					<img src="../assets/logo/wordmark-clean.png" alt="Direkte" class="site-footer__wordmark" loading="lazy">
+					<img src="../assets/logo/wordmark-clean.webp" alt="Direkte" class="site-footer__wordmark" loading="lazy">
 					<div class="site-footer__awards" aria-label="Michelin Guide and Repsol Sun">
 						<img src="../assets/awards/michelin-plate.png" alt="Michelin Guide" loading="lazy">
 						<img src="../assets/awards/repsol-plate.svg" alt="1 Repsol Sun" loading="lazy">
